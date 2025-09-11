@@ -1,50 +1,54 @@
-/* メニューリストを非表示にして、Menuにホバーしたときだけ表示 */
+/* メニュー全体の外枠。リストを絶対配置するためrelativeに */
 .menu-nav {
     position: relative;
     display: inline-block;
 }
 
+/* 「Menu」ラベルの見た目やクリック感 */
 .menu-label {
-    background: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 6px 6px 0 0;
-    font-weight: bold;
-    user-select: none;
+    background: #4CAF50;           /* 背景色（緑） */
+    color: #fff;                   /* 文字色（白） */
+    padding: 10px 20px;            /* 内側の余白 */
+    cursor: pointer;               /* マウスカーソルをポインタに */
+    border-radius: 6px 6px 0 0;    /* 上だけ角丸 */
+    font-weight: bold;             /* 太字 */
+    user-select: none;             /* テキスト選択不可 */
 }
 
+/* メニューリスト本体。初期は非表示、絶対配置で下に出す */
 .menu-list {
-    display: none;
-    position: absolute;
+    display: none;                 /* 最初は非表示 */
+    position: absolute;            /* 親（menu-nav）基準で配置 */
     left: 0;
-    top: 100%;
-    background: #fff;
-    border: 1px solid #4CAF50;
-    border-radius: 0 0 8px 8px;
-    min-width: 180px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 100;
+    top: 100%;                     /* menu-labelの下に配置 */
+    background: #fff;              /* 背景色（白） */
+    border: 1px solid #4CAF50;     /* 緑の枠線 */
+    border-radius: 0 0 8px 8px;    /* 下だけ角丸 */
+    min-width: 180px;              /* 最小幅 */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* 影 */
+    z-index: 100;                  /* 前面に表示 */
     margin: 0;
     padding: 0;
 }
 
+/* メニューリストの各項目。リストマークを消す */
 .menu-list li {
     list-style: none;
 }
 
+/* メニューのリンク部分の見た目 */
 .menu-list li a {
-    display: block;
-    padding: 10px 16px;
-    color: #333;
-    text-decoration: none;
+    display: block;                /* 全体をクリック可能に */
+    padding: 10px 16px;            /* 内側の余白 */
+    color: #333;                   /* 文字色（濃いグレー） */
+    text-decoration: none;         /* 下線を消す */
 }
 
+/* メニューのリンクにホバーしたときの背景色 */
 .menu-list li a:hover {
-    background: #e0f7e0;
+    background: #e0f7e0;           /* 薄い緑 */
 }
 
+/* menu-navにホバー、またはmenu-labelにフォーカス時にリストを表示 */
 .menu-nav:hover .menu-list,
 .menu-label:focus + .menu-list {
-    display: block;
-}
