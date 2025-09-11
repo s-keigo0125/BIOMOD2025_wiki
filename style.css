@@ -55,13 +55,15 @@
     display: block;
 }
 
+/* フッターここから */
+
 /* フッターを左右2分割し、中央揃え＆レスポンシブ対応 */
 .footer-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 32px;
-    background: #f5f5f5;
+    background: #3c32f4;
     border-top: 1px solid #ccc;
     font-size: 1em;
 }
@@ -104,3 +106,5 @@
         margin: 0 auto 4px auto;
     }
 }
+
+/*フッターここまで
