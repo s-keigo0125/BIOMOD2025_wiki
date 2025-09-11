@@ -52,3 +52,5 @@
 /* menu-navにホバー、またはmenu-labelにフォーカス時にリストを表示 */
 .menu-nav:hover .menu-list,
 .menu-label:focus + .menu-list {
+    display: block;
+}
