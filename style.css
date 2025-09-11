@@ -63,7 +63,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 32px;
-    background: #6863c7;
+    background: rgba(104, 99, 199, 0.6);
     border-top: 1px solid #ccc;
     font-size: 1em;
 }
