@@ -1,1 +1,89 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BIOMOD 2025 Team Sendai</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="BIOMOD 2025 Team Sendai wiki" />
+     <!--上は検索エンジンに表示されるやつ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--上はスマホ用、拡大率の設定とか-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--上はファビコン(ブックマークで表示されるやつ)-->
+
+    <!-- <script src="script.js"></script> 
+     ここスマホ用にJS書かないと-->
+    
+</head>
+<body>
+    <header><!--ヘッダー部分-->
+        <h1>BIOMOD Team Sendai</h1>
+    </header>
+    <nav class="menu-nav">
+    <div class="menu-label">Menu</div>
+    <ul class="menu-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="experiment.html">Experiment</a></li>
+        <li><a href="discussion_and_future.html">Discussion & Future</a></li>
+        <li><a href="elsi.html">ELSI</a></li>
+        <li><a href="members.html">Members</a></li>
+    </ul>
+    </nav>
+
+    <main>
+    <div class="content">
+        <section>
+        <h2>Overview of the design</h2>
+        <h3>
+        私たちが設計したHungry Gelは、DNAハイドロゲル自体が標的分子を検出し、検出後にその周辺のローカルな位置でのみゲル溶解を引き起こすというシステムです。これを実現するために私たちは、DNAアプタマー、エントロピー駆動回路、DNAハイドロゲルという機能の異なる3つのDNAモジュールを結合してシステムを構築しました。システムの一連の動作は、まずアプタマーが標的細菌を認識することから始まります。この認識が引き金となって増幅回路が起動し、ゲルの架橋構造を切断する一本鎖DNAが大量に放出されます。その結果、標的細菌のすぐ近くのゲルだけが選択的に溶解し、まるでマクロファージが異物を飲み込むかのように、細菌をゲル内部へと捕捉します。
+        </section>
+        <section>
+        <h2>DNA Aptamer</h2>
+        <h3>
+        アプタマーは、特定の分子のみに強く結合する短いDNAまたはRNA配列である。さらに、アプタマーの配列を変更することで、標的となる細菌も変更できる。この実験では、アプタマーが標的細菌に反応し、新たなDNA配列を露出させる。
+        </h3>
+        <h1>アプタマーの図を入れる。付随して文章も</h1>
+        <br>
+        </section>
+
+        <section>
+        <h2>Entropy driven amplification circuit</h2>
+        <h3>
+        エントロピー駆動回路の役割は、アプタマーが生成する微弱な出力信号の濃度を、ハイドロゲル溶解に必要なレベルまで増幅することです。私たちは、Zhangらが提案した酵素を用いない増幅回路を採用します。これらの回路の原動力は、溶液中の分子数の増加であり、これがエントロピーの増加をもたらします。
+        </h3>
+        <h1>駆動回路の図</h1>
+        <h3>
+        プロセスは以下の通りです：触媒と呼ばれる1本鎖DNAが、基質と呼ばれる大量の3本鎖DNA複合体と燃料と呼ばれる1本鎖DNAを含む溶液に添加されると、回路が開始されます。回路が動作すると、出力と呼ばれる1本鎖DNAが生成されます。この回路の重要な特徴は、反応の最後に触媒が再生されることです。この特徴により、プロセスが複数回繰り返されます。これによって回路は増幅効果を持ち、少量の触媒が大量の出力を生成することができます。
+        </h3>
+        </section>
+
+        <section>
+        <h2>DNA Hydrogel</h2>
+        <h3>
+        DNAハイドロゲルは、相互に結合したDNA鎖によって形成される三次元ネットワークです。従来のハイドロゲルとは異なり、DNAベースであることによっていくつかの利点があります。本プロジェクトでは、いくつかのメリットのうち特にゲル内の架橋点を破壊する他のDNA分子を添加することで、ゲルを溶解することが可能であるという特性に注目しました。
+        </h3>
+        <br>
+        <h3>
+        本プロジェクトでは、数あるDNAハイドロゲルのモチーフの中で、下図のような4分岐モチーフを採用しました。ここで、赤色のスティッキーエンドと緑色のスティッキーエンドは異なる長さに設計しています。そして、上のスティッキーエンドが左のスティッキーエンドと、下のスティッキーエンドが右のスティッキーエンドと相補的な配列になっています。
+        </h3>
+        <h1>4分岐モチーフの図</h1>
+        <br>
+
+    </div>    
+    </main>
+
+    <footer class="footer-flex">
+    <div class="footer-left">
+        <p>&copy; 2025 Team Sendai  All Rights Reserved.</p>
+    </div>
+    <div class="footer-right">
+        <a href="https://www.molbot.mech.tohoku.ac.jp/" target="_blank" rel="noopener">
+            <img src="logo.png" alt="Lab Logo" style="height:40px; display:block; margin: 0 auto 4px auto;">
+        </a>
+        <p>Visit Lab Site</p>
+    </div>
+</footer>
+
+</html>
