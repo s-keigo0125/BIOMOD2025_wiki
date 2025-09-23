@@ -57,6 +57,25 @@
     }
 }
 
+/* ここから本文のスタイル*/
+/* style.cssに追加 */
+/* 画像2枚を横並びにする */
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px; /* 画像間のスペース */
+    margin: 16px 0;
+}
+
+.image-row img {
+    display: block;
+    max-width: 38%;
+    height: auto;
+}
+
+/* ここまで本文のスタイル*/
+
 /* フッターここから */
 
 /* フッターを左右2分割し、中央揃え＆レスポンシブ対応 */
