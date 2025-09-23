@@ -64,16 +64,26 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 24px; /* 画像間のスペース */
-    margin: 16px 0;
+    gap: 24px;
+    margin: 8px 0;
 }
 
-.image-row img {
-    display: block;
-    max-width: 38%;
+.image-col.left {
+    flex: 2;
+    min-width: 0;
+}
+
+.image-col.right {
+    flex: 3;
+    min-width: 0;
+}
+
+.image-col img {
+    width: 100%;
     height: auto;
+    display: block;
+    margin: 0;
 }
-
 /* ここまで本文のスタイル*/
 
 /* フッターここから */
