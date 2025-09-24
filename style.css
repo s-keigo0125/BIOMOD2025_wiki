@@ -84,6 +84,23 @@
     display: block;
     margin: 0;
 }
+
+.sequence-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 1em;
+    background: #fafafa;
+}
+.sequence-table th, .sequence-table td {
+    border: 1px solid #bbb;
+    padding: 8px 12px;
+    text-align: left;
+}
+.sequence-table th {
+    background: #e0e0e0;
+}
+
 /* ここまで本文のスタイル*/
 
 /* フッターここから */
