@@ -93,6 +93,11 @@
 /* ここから本文のスタイル*/
 /* style.cssに追加 */
 /* 画像2枚を横並びにする */
+
+.content {
+    font-weight: normal;
+    margin: 0 7.5%; /* 左右に画面幅の5%ずつマージン */
+}
 .image-row {
     display: flex;
     justify-content: center;
@@ -133,6 +138,14 @@
 .sequence-table th {
     background: #e0e0e0;
 }
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border: 10px solid #4CAF50; /* 緑色の枠線 */
+    border-radius: 10px; /* 角丸 */
+}
+
 /* ここまで本文のスタイル*/
 
 /* フッターここから */
@@ -143,7 +156,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 32px;
-    background: rgba(104, 99, 199, 0.6);
+    background: #4CAF50;
     border-top: 1px solid #ccc;
     font-size: 1em;
 }
@@ -188,4 +201,3 @@
 }
 
 /*フッターここまで
-
