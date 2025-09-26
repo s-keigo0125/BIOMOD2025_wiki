@@ -2,13 +2,16 @@
 header {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 0px;
     background: #4CAF50;
+    color: #fff;
+    position: sticky;
+    top: 0;
 }
 
-header h1 {
+header h2 {
     flex: 4; /* タイトル部分 */
-    color: #2f517a;
+    text-align: center;
 }
 
 nav {

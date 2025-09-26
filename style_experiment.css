@@ -1,0 +1,18 @@
+.side-item {
+  position: sticky;
+  top: 0px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.main {
+    flex: 8;
+}
+
+.aside {
+    flex: 2;
+    margin-left: 20px;
+}
