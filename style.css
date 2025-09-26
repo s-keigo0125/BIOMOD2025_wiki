@@ -1,12 +1,21 @@
+/* または、bodyとhtmlのマージン・パディングをリセット */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* メニューを横並びにするだけのシンプルなスタイル例 */
 header {
     display: flex;
     align-items: center;
-    padding: 10px 0px;
+    padding: 20px 0px;
     background: #4CAF50;
     color: #fff;
     position: sticky;
     top: 0;
+    height: 45px; /* ヘッダーの高さを指定 */
+    width: 100%;
 }
 
 header h2 {
@@ -128,8 +137,9 @@ nav {
 
 .content {
     font-weight: normal;
-    margin: 0 7.5%; /* 左右に画面幅の5%ずつマージン */
+    padding: 0 7.5%; /* 左右に画面幅の5%ずつマージン */
 }
+
 .image-row {
     display: flex;
     justify-content: center;

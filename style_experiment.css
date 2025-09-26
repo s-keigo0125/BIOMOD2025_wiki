@@ -1,11 +1,15 @@
 .side-item {
-  position: sticky;
-  top: 0px;
+    position: sticky;
+    top: 150px;
 }
 
 .container {
-  display: flex;
-  width: 100%;
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    font-weight: normal;
+    margin: 0; /* マージンを削除 */
+    padding: 0 5%; /* 内側の余白に変更 */
 }
 
 .main {
@@ -14,5 +18,4 @@
 
 .aside {
     flex: 2;
-    margin-left: 20px;
 }
