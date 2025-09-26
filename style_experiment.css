@@ -1,11 +1,17 @@
 .side-item {
     position: sticky;
     top: 150px;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.side-item ul {
+    list-style-position: inside; 
 }
 
 .container {
     display: flex;
-    width: 100%;
+    width: 90%;
     min-width: 0;
     font-weight: normal;
     margin: 0; /* マージンを削除 */
