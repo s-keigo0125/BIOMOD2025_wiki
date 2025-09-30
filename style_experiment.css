@@ -27,15 +27,31 @@
 }
 
 /*ここから本文用のスタイル*/
-.figure-block .figure-title {
+.split-in-half {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.split-in-half .figure-block {
+    flex: 1;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.split-in-half .figure-block .figure-title {
     margin-bottom: 4px; /* タイトルと画像の間隔（必要に応じて調整） */
     line-height: 1.1;
 }
-.figure-block .img-item {
-    margin-top: 0;      /* タイトルとの余白を無くす */
-    padding-top: 0;
+.split-in-half .figure-block .img-item {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
 }
-.figure-block .img-item img {
+.split-in-half .figure-block .img-item img {
     display: block;
     margin: 0 auto;
+    width: 100%;
+    height: auto;
 }
