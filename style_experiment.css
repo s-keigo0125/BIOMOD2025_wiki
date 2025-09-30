@@ -25,3 +25,17 @@
 .aside {
     flex: 2;
 }
+
+/*ここから本文用のスタイル*/
+.figure-block .figure-title {
+    margin-bottom: 4px; /* タイトルと画像の間隔（必要に応じて調整） */
+    line-height: 1.1;
+}
+.figure-block .img-item {
+    margin-top: 0;      /* タイトルとの余白を無くす */
+    padding-top: 0;
+}
+.figure-block .img-item img {
+    display: block;
+    margin: 0 auto;
+}

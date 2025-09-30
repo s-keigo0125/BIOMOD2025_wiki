@@ -36,42 +36,67 @@
         <main class="main">
         <section>
         <h1>いったん適当にコンテンツ追加</h1>
-        <h2>Background</h2>
+        <h2>Overview</h2>
         <h3>
-        DNAは、生物の遺伝情報を担う分子であり、わずか4種類の塩基（A、T、G、C）の組み合わせによって膨大な情報をコードしています。
-        DNAは2重らせん構造を持ち、細胞分裂時に正確に複製されることで生命の設計図を後世に伝える役割を果たしています。
-        しかしDNAの特性は情報保存にとどまらず、分子同士の高い特異性と安定した自己組織化能を活かすことで、人工的に多様なナノ構造や機能性材料を構築することが可能です。
-        その一例として、DNAハイドロゲルがあります。DNAハイドロゲルは、センシングやドラッグデリバリーといった応用が期待されています。
+        実証のために実験を行ったみたいな文章を適当に入れる
         </h3>
         </section>
+        <br>
+
         <section id="experiment1">
-        <h2>Problem and Goal</h2>
+        <h2>Entopy Driven Circuit testing</h2>
+        <h3 id="sub">Objective</h3>
         <h3>
-        Problem<br>
-        今回、私たちはDNAハイドロゲルの応用性に着目し、マクロファージの貪食作用を模倣する新しい機能性DNAハイドロゲルの開発を試み、これをHungry Gelと名づけました。
-        Hungry Gelを実現するうえでは次の2つの機能が必要になります。1つ目は標的細菌を発見することです。
-        2つ目は標的細菌を検出した後、近傍のDNAハイドロゲルを溶解してそれを取り込むことです。私たちは、1つ目の機能を実現するために、標的を検出すると1本鎖DNAを生成するアプタマーを利用した検出機構を採用します。
-        これによって生成された1本鎖DNAを用いてDNAハイドロゲルを溶解させる手法を考えました。
-        しかし、この手法には問題があります。アプタマーによって生成される1本鎖DNAの量はとても少ないことです。DNAハイドロゲルを溶解させるためには、より多くの生成量が必要になります。
-        したがって、DNAハイドロゲルを溶解させるために必要なレベルまで、アプタマーのシグナルを増幅する必要があります。
+        エントロピードリブン回路の増幅効果を実際に確認すること。
         </h3>
+        <h3 id="sub">Method</h3>
         <h3>
-        Project Goal<br>
-        本研究の目的は、アプタマーが検出したわずかなシグナルを効率的に増幅し、DNAハイドロゲルを確実に溶解させる仕組みを構築することです。
-        これにより、マクロファージのように標的を自律的に取り込み可能な「Hungry Gel」の実現を目指します。
+        私たちは4つのcatalyst濃度の異なるサンプルを用意し、比較した。それぞれ、catalyst濃度は50nM(Sample#1)、25nM(Sample#2)、10nM(Sample#3)、0nM(sample#4)に調整した。
+        outputの存在を確認する手法として下の図のようなレポーター分子を用いた。outputが存在すると、レポーター分子に結合し、鎖置換反応を引き起こします。この反応の結果として、レポーター分子から蛍光を消す分子（BHQ）が離れ、蛍光分子（FAM）が解放されて発生する蛍光をリアルタイムPCRで計測した。
+        計測のサイクルは1分間に1回で80分間行い、温度は25℃に設定した。
+        </h3>
+        <img src="image/reporter.png" alt="Entropy-driven circuit testing setup" style="max-width: 65%; height: auto; display: block; margin: 16px auto;">
+        <h3 id="sub">Result</h3>
+        <img src="image/Entropy_driven_testing.png" alt="Entropy-driven circuit result" style="max-width: 65%; height: auto; display: block; margin: 16px auto;">
+        <h3>
+        全体の傾向として(10nMと0nMのサンプルでは逆転が起きているが)、catalyst濃度が高いほどoutputの生成速度が速く、最終的なoutputの濃度も高くなっていることが確認された。
+        </h3>
+        <h3 id="sub">Discussion and Next Step</h3>
+        <h3>
+        エントロピードリブン回路の増幅効果が確認された。ただし、蛍光強度による測定であり、最終的なoutputの濃度に関しては不透明であるため、濃度の測定については別途実験を行う。
+        </h3>
         </section>
+        <br>
 
         <section id="experiment2">
-        <h2>Idea</h2>
+        <h2>DNA Hydrogel Formation testing</h2>
+        <h3 id="sub">Objective</h3>
         <h3>
-        私たちは、少量の1本鎖DNAシグナルを増幅するような手法を検討し、その中でも特に、エントロピー駆動回路の増幅能力に注目しました。
-        本プロジェクトで用いるエントロピー駆動回路は、過去の研究[1]で報告されたものを基にしています。
-        この回路の駆動力は溶液中の分子数の増加であり、これがエントロピーの増加をもたらし、回路が作動することでシグナルを連鎖的に増幅します。
-        簡単にこの回路の増幅効果について説明すると、少量の1本鎖DNA(Catalyst)が回路内で触媒的に機能し、別の1本鎖DNA(Output)が大量に放出されます。
-        そこで、私たちはアプタマーによって生成される少量のDNAシグナルを、エントロピー駆動回路の触媒DNAとして用いることを着想しました。
-        これによって、先に挙げた濃度差の問題の解決を試みます
+        設計した配列でDNAハイドロゲルが形成されることを確認すること。
         </h3>
-        <br>    
+        <h3 id="sub">Method</h3>
+        <h3>
+        バッファー溶液としてMgCl2の入ったもの(Buffer#1)と、NaClの入ったもの(Buffer#2)の2種類を用意した。
+        </h3>
+        <div class="figure-block" style="max-width:90%; margin:16px auto; text-align:center;">
+            <h3 class="figure-title">Table2.a: Buffer#1 Recipe</h3>
+            <figure class="img-item" style="margin:0 auto; width:60%;">
+                <img src="image/Buffer1.png" alt="Buffer#1" style="width:100%; height:auto; display:block;">
+            </figure>
+        </div>
+
+        <h3>
+        <a href="design.html#appendix">DesignのAppendix</a>に示したDNAハイドロゲルの各配列の濃度が400μM、全体として20μLになるように4つのDNA溶液とバッファー溶液、純水を混合して冷蔵庫に放置した後、ゲルができるかどうかを確認した。
+        </h3>
+        <h3 id="sub">Result</h3>
+        <img src="image/Entropy_driven_testing.png" alt="Entropy-driven circuit result" style="max-width: 65%; height: auto; display: block; margin: 16px auto;">
+        <h3>
+        全体の傾向として、catalyst濃度が高いほどoutputの生成速度が速く、最終的なoutputの濃度も高くなっていることが確認された。しかし、10nMと0nMのサンプルでは逆転が起きている。
+        </h3>
+        <h3 id="sub">Conclusion</h3>
+        <h3>
+        エントロピードリブン回路の増幅効果が確認された。ただし、蛍光強度による測定であるため、最終的なoutputの濃度に関しては不透明である。
+        </h3>   
         </section>
 
         <section id="experiment3">
