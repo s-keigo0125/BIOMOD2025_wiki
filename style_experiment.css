@@ -27,6 +27,15 @@
 }
 
 /*ここから本文用のスタイル*/
+
+/* 一般的な画像のスタイル */
+img {
+    max-width: 65%;
+    height: auto;
+    display: block;
+    margin: 16px auto;
+}
+
 .split-in-half {
     display: flex;
     gap: 8px;
