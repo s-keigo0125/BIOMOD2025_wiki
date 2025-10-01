@@ -10,3 +10,16 @@
 .team-title {
     text-align: center;
 }
+
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.member-card img{
+    max-width: 25%;
+}
