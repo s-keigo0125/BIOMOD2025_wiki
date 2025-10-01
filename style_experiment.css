@@ -49,17 +49,17 @@ img {
     margin: 8px 0;
 }
 
-.split-in-half .table-block .table-title {
+.table-block .table-title {
     margin-bottom: 4px; /* タイトルと画像の間隔（必要に応じて調整） */
     line-height: 1.1;
 }
-.split-in-half .table-block .img-item {
+.table-block .img-item {
     margin: 0 auto;
     padding: 0;
-    width: 80%;
-    max-width: 300px;
+    width: 95%;
+    max-width: 400px;
 }
-.split-in-half .table-block .img-item img {
+.table-block .img-item img {
     display: block;
     margin: 0 auto;
     width: 100%;
