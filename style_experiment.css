@@ -43,26 +43,51 @@ img {
     width: 100%;
 }
 
-.split-in-half .figure-block {
+.table-block {
     flex: 1;
     text-align: center;
     margin: 8px 0;
 }
 
-.split-in-half .figure-block .figure-title {
+.split-in-half .table-block .table-title {
     margin-bottom: 4px; /* タイトルと画像の間隔（必要に応じて調整） */
     line-height: 1.1;
 }
-.split-in-half .figure-block .img-item {
+.split-in-half .table-block .img-item {
     margin: 0 auto;
     padding: 0;
     width: 80%;
     max-width: 300px;
 }
-.split-in-half .figure-block .img-item img {
+.split-in-half .table-block .img-item img {
     display: block;
     margin: 0 auto;
     width: 100%;
     height: auto;
     max-width: 100%;
+}
+
+.figure-block {
+    flex: 1;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.figure-block .figure-title {
+    margin-top: 4.0px; /* タイトルと画像の間隔（必要に応じて調整） */
+    padding-top: 0px;
+    line-height: 1.1;
+}
+.figure-block .img-item {
+    margin-bottom: 0px; /* 下のマージンを削除 */
+    padding-bottom: 0px;
+    width: 100%;
+    max-width: 750px;
+}
+
+.figure-block .img-item img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
 }

@@ -55,9 +55,19 @@
         outputの存在を確認する手法として下の図のようなレポーター分子を用いた。outputが存在すると、レポーター分子に結合し、鎖置換反応を引き起こします。この反応の結果として、レポーター分子から蛍光を消す分子（BHQ）が離れ、蛍光分子（FAM）が解放されて発生する蛍光をリアルタイムPCRで計測した。
         計測のサイクルは1分間に1回で80分間行い、温度は25℃に設定した。
         </h3>
-        <img src="image/reporter.png" alt="Entropy-driven circuit testing setup">
+        <div class="figure-block">
+                <figure class="img-item">
+                    <img src="image/reporter.png" alt="Entropy-driven circuit testing setup">
+                </figure>
+                <h3 class="figure-title">Fig1.a: Fluorescence Reporter System</h3>
+        </div>
         <h3 id="sub">Result</h3>
-        <img src="image/Entropy_driven_testing.png" alt="Entropy-driven circuit result">
+        <div class="figure-block">
+                <figure class="img-item">
+                    <img src="image/Entropy_driven_testing.png" alt="Entropy-driven circuit testing result">
+                </figure>
+                <h3 class="figure-title">Fig1.b: Entropy-driven circuit result</h3>
+        </div>
         <h3>
         全体の傾向として(10nMと0nMのサンプルでは逆転が起きているが)、catalyst濃度が高いほどoutputの生成速度が速く、最終的なoutputの濃度も高くなっていることが確認された。
         </h3>
@@ -79,14 +89,14 @@
         バッファー溶液として、下の表にしめすようにMgCl2の入ったもの(Buffer#1)と、NaClの入ったもの(Buffer#2)の2種類を用意した。
         </h3>
         <div class="split-in-half">
-            <div class="figure-block">
-                <h3 class="figure-title">Table2.a: Buffer#1 Recipe</h3>
+            <div class="table-block">
+                <h3 class="table-title">Table2.a: Buffer#1 Recipe</h3>
                 <figure class="img-item">
                     <img src="image/Buffer1.png" alt="Buffer#1">
                 </figure>
             </div>
-            <div class="figure-block">
-                <h3 class="figure-title">Table2.b: Buffer#2 Recipe</h3>
+            <div class="table-block">
+                <h3 class="table-title">Table2.b: Buffer#2 Recipe</h3>
                 <figure class="img-item">
                     <img src="image/Buffer2.png" alt="Buffer#2">
                 </figure>
@@ -95,47 +105,19 @@
 
         <h3>
         <a href="design.html#appendix">DesignのAppendix</a>に示したDNAハイドロゲルの各配列の濃度が400μM、全体として20μLになるように4つのDNA溶液とバッファー溶液、純水を混合して冷蔵庫に放置した後、ゲルができるかどうかを確認した。
+        また、同じ溶液に対して、95℃(5分)、その後1分ごとに-1℃で4℃まで温度を下げるアニーリングを行った。
         </h3>
-        <h3 id="sub">Result</h3>
-        <img src="image/Entropy_driven_testing.png" alt="Entropy-driven circuit result" style="max-width: 65%; height: auto; display: block; margin: 16px auto;">
-        <h3>
-        全体の傾向として、catalyst濃度が高いほどoutputの生成速度が速く、最終的なoutputの濃度も高くなっていることが確認された。しかし、10nMと0nMのサンプルでは逆転が起きている。
-        </h3>
-        <h3 id="sub">Conclusion</h3>
-        <h3>
-        エントロピードリブン回路の増幅効果が確認された。ただし、蛍光強度による測定であるため、最終的なoutputの濃度に関しては不透明である。
-        </h3>   
+        <div class="table-block">
+            <h3 class="table-title">Table2.c: Solution Recipe</h3>
+            <figure class="img-item">
+                <img src="image/Solution.png" alt="Solution Recipe">
+            </figure>
+        </div>
         </section>
 
         <section id="experiment3">
-        <h2>Solution</h2>
-        <h3>
-        私たちは、DNAアプタマー、エントロピー駆動回路、そしてDNAハイドロゲルという、異なる役割を持つ3つのDNAモジュールを巧みに統合することで、標的を自律的に捕獲する革新的なシステム「Hungry Gel」を構築します。
-        このシステムは、生物が持つ優れた認識・応答機能を模倣したものであり、以下の一連の動作原理によって機能します。
-        </h3>
-        <h3>
-        1. DNAアプタマーによる選択的な「認識」と「シグナル変換」<br>
-        システムは、まずアプタマーが標的細菌を極めて高い特異性で認識することから始まります。
-        アプタマーは、特定の細菌表面の分子と結合すると構造が変化し、その変化が物理的なトリガーとして機能します。これにより、微量の触媒となる1本鎖DNAが放出され、細菌の存在が化学的なシグナルへと変換されます。
-        この段階は、マクロファージが異物を正確に識別するプロセスに相当します。
-        </h3>
-        <h3>
-        2.エントロピー駆動回路による「シグナル増幅」<br>
-        DNAアプタマーによるわずかなDNAシグナルは、これを触媒DNAとするエントロピー駆動回路によって増幅されます。
-        回路は基質と呼ばれる三本鎖DNA複合体と、燃料と呼ばれる一本鎖DNAを大量に含む溶液に、触媒と呼ばれる一本鎖DNAが添加されると始動します。
-        回路が作動するにつれ、 アウトプットと呼ばれる一本鎖DNAが生成されます。回路の重要な特徴は、反応終了時に触媒が再生される点である。この特性により、プロセスは複数回繰り返されます。
-        </h3>
-        <h3>
-        3.DNAハイドロゲルの溶解<br>
-        エントロピー駆動回路によって生じた大量のアウトプットを用いて、DNAハイドロゲルを溶解させます。
-        具体的な手法としては、簡単な鎖置換と呼ばれるメカニズムを利用します。
-        まず、私たちのDNAハイドロゲルは、4分岐DNAモチーフを基本骨格としています。
-        このモチーフは、それぞれ異なる長さを持つ2種類のスティッキーエンドで隣接するモチーフと結合し、三次元的な網目構造を形成しています。
-        この長さの違うスティッキーエンドによる結合が、ハイドロゲルの形状を保つ架橋構造を作り出しています。
-        次に、エントロピー駆動回路から大量に放出された出力DNAが、この架橋構造を溶解させる役割を担います。
-        出力DNAは、短いスティッキーエンドよりも長く、かつ長いスティッキーエンドと特異的に結合するように設計されています。
-        この出力DNAが、長さの違うスティッキーエンド間の結合よりも安定な結合を形成するため、鎖置換反応が起こります。その結果、スティッキーエンド間の結合がはがされ、ハイドロゲルの網目構造が破壊されます。
-        </h3>
+        <h2>ここにまた実験入れる</h2>
+        </section>
         </main>
 
         <aside class="aside">
