@@ -7,8 +7,9 @@
     margin-bottom: 20px; /* 線とコンテンツの間の余白 */
 }
 
-.team-title {
+.title-memberpage {
     text-align: center;
+    font-size: 2.0em;
 }
 
 .member-list {
@@ -20,6 +21,44 @@
     list-style: none;
 }
 
-.member-card img{
-    max-width: 25%;
+.member-card{
+    display: flex;
+    align-items: flex-start;
+}
+
+.member-card .photo-box {
+    flex: 3;
+    text-align: center;
+}
+
+.member-card .photo-box img {
+    width: 50%;
+}
+
+.member-info-right {
+    flex: 4;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.member-card .member-info-left {
+    flex: 4;
+    margin-left: 10px;
+    text-align: right;
+}
+
+.Name {
+    font-family: "Segoe UI", "Times New Roman", "Georgia", serif;
+    font-weight: bold;
+    font-size: 2.0em;
+    color: #2d4a67;
+    margin-bottom: 8px;
+}
+
+.role {
+    font-family: "Segoe UI", "Times New Roman", "Georgia", serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #2d4a67;
+    margin-bottom: 8px;
 }
