@@ -1,3 +1,5 @@
+
+
 .side-item {
     position: sticky;
     top: 150px;
@@ -24,6 +26,7 @@
 
 .main {
     flex: 8;
+    padding-right : 40px;
 }
 
 .aside {
@@ -36,6 +39,13 @@
 /* 一般的な画像のスタイル */
 img {
     max-width: 65%;
+    height: auto;
+    display: block;
+    margin: 16px auto;
+}
+
+.big-image {
+    max-width: 85%;
     height: auto;
     display: block;
     margin: 16px auto;

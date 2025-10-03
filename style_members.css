@@ -1,4 +1,4 @@
-.content::before {
+.content-memberpage::before {
     content: '';
     display: block;
     width: 100%;

@@ -9,7 +9,7 @@ html, body {
 header {
     display: flex;
     align-items: center;
-    padding: 20px 0px;
+    padding: 30px 0px;
     background: #4CAF50;
     color: #fff;
     position: sticky;
@@ -138,6 +138,19 @@ nav {
 .content {
     font-weight: normal;
     padding: 0 7.5%; /* 左右に画面幅の5%ずつマージン */
+    font-family: "Times New Roman", "Georgia", serif;
+}
+
+.content h2 {
+    margin-top: 40px;
+    margin-bottom: 4px;
+    padding: 0;
+    font-size : 1.8em;
+}
+.content h3 {
+    margin-top: 2px;
+    margin-bottom: 0px;
+    padding: 0;
 }
 
 /* 移動先のセクションや見出し要素など、全てに適用します */
@@ -145,6 +158,10 @@ nav {
 
 section[id] { 
     /* ヘッダーの高さ 85px よりも少し大きめの値を設定すると安心です */
+    scroll-margin-top: 90px; 
+}
+
+img[id]{
     scroll-margin-top: 90px; 
 }
 
