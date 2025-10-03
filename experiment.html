@@ -43,14 +43,14 @@
         <br>
 
         <section id="experiment1">
-        <h2>Entopy Driven Circuit testing</h2>
+        <h2>Expt.1 Entopy Driven Circuit testing</h2>
         <h3 class="sub">Objective</h3>
         <h3>
         エントロピードリブン回路の増幅効果を実際に確認すること。
         </h3>
         <h3 class="sub">Method</h3>
         <h3>
-        私たちは4つのcatalyst濃度の異なるサンプルを用意し、比較した。それぞれ、catalyst濃度は50nM(Sample#1)、25nM(Sample#2)、10nM(Sample#3)、0nM(sample#4)に調整した。
+        私たちは4つのcatalyst濃度の異なるサンプルを用意し、比較した。それぞれ、catalyst濃度は50 nM(Sample#1)、25 nM(Sample#2)、10 nM(Sample#3)、0 nM(Sample#4)に調整した。各溶液にはSubstrateが20 nM、Fuelが1000 nMの濃度で入っている。
         outputの存在を確認する手法として下の図のようなレポーター分子を用いた。outputが存在すると、レポーター分子に結合し、鎖置換反応を引き起こします。この反応の結果として、レポーター分子から蛍光を消す分子（BHQ）が離れ、蛍光分子（FAM）が解放されて発生する蛍光をリアルタイムPCRで計測した。
         計測のサイクルは1分間に1回で80分間行い、温度は25℃に設定した。
         </h3>
@@ -78,7 +78,7 @@
         <br>
 
         <section id="experiment2">
-        <h2>DNA Hydrogel Formation testing</h2>
+        <h2>Expt.2 DNA Hydrogel Formation testing</h2>
         <h3 class="sub">Objective</h3>
         <h3>
         設計した配列でDNAハイドロゲルが形成されることを確認すること。
@@ -121,25 +121,91 @@
 
         <h3 class="sub">Discussion and Next Step</h3>
         <h3>
-        混合溶液はゲル化せずに液体のままであったが、マクロな観察だけではミクロな結合状態（一本鎖／二本鎖／高次集合体）が不明である。そこで、次の手段として電気泳動を用いた分子レベルの測定を行う。
+        混合溶液はゲル化せずに液体のままであったが、マクロな観察だけではミクロな結合状態が不明である。そこで、次の手段として電気泳動を用いた分子レベルの測定を行う。また、本実験では2種類の塩のバッファーに対して各1つの濃度でしか測定を行っていないため、濃度を変えてゲルが形成されるかを確認する。
         </h3>
         </section>
 
         <section id="experiment3">
-        <h2>Polyacrylamide Gel Electrophoresis (PAGE)</h2>
+        <h2>Expt.3 Polyacrylamide Gel Electrophoresis (PAGE)</h2>
         <h3 class="sub">Objective</h3>
         <h3>
         DNA配列が溶液中で設計通りの二本鎖や高次集合体を形成しているか、分子レベルで確認し、ゲル化をしなかった原因を特定すること。   
         </h3>
         </section>
+
+        <section id="experiment4">
+        <h2>Expt.4 Agarose Gel Electrophoresis</h2>
+        <h3 class="sub">Objective</h3>
+        <h3>
+        後で追加する
+        </h3>
+        </section>
+
+        <section id="experiment5">
+        <h2>Expt.5 DLS</h2>
+        <h3 class="sub">Objective</h3>
+        <h3>
+        後で追加する
+        </h3>
+        </section>
+
+        <section id="experiment6">
+        <h2>Expt.6 Entropy Driven Circuit Output Concentration measurement</h2>
+        <h3 class="sub">Objective</h3>
+        <h3>
+        エントロピードリブン回路によって生成されるoutputの濃度を定量的に計測すること。
+        </h3>
+        <h3 class="sub">Method</h3>
+        <h3>我々は以下の条件で10種類のサンプルを調製した。</h3>
+        <div class="split-in-half">
+            <div class="sample-group">
+                <h4>Sample#A群（Catalyst濃度が異なる, n=6）</h4>
+                <ul class="sample-conditions">
+                    <li>Substrate: 300 nM</li>
+                    <li>Fuel: 390 nM</li>
+                    <li>Reporter: 900 nM</li>
+                    <li>Buffer: 12.5 nM (MgCl2)</li>
+                    <li>Catalyst: 濃度を<a href="#table6a">Table 6.a</a>に示す通りに変化（A1-A6）</li>
+                </ul>
+            </div>    
+            <div class="sample-group">
+                <h4>Sample#B群（Output濃度が異なる, n=4）</h4>
+                <ul class="sample-conditions">
+                    <li>Reporter: 900 nM</li>
+                    <li>Buffer: 12.5 nM (MgCl2)</li>
+                    <li>Output: 濃度を<a href="#table6b">Table 6.b</a>に示す通りに変化（B1-B4）</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="split-in-half">
+            <div class="table-block">
+                <h3 class="table-title">Table6.a: Catalyst Concentration</h3>
+                <figure class="img-item">
+                    <img src="image/Catalyst.png" alt="Catalyst Concentration">
+                </figure>
+            </div>
+            <div class="table-block">
+                <h3 class="table-title">Table6.b: Output Concentration</h3>
+                <figure class="img-item">
+                    <img src="image/Output.png" alt="Output Concentration">
+                </figure>
+            </div>
+        </div>
+
+        </section>
+
         </main>
 
         <aside class="aside">
             <div class="side-item">
                 <ul>
-                    <li><a href="#experiment1">experiment1</a></li>
-                    <li><a href="#experiment2">experiment2</a></li>
-                    <li><a href="#experiment3">experiment3</a></li>
+                    <li><a href="#experiment1">Expt.1 Entopy Driven Circuit testing</a></li>
+                    <li><a href="#experiment2">Expt.2 DNA Hydrogel Experiment</a></li>
+                    <li><a href="#experiment3">Expt.3 Polyacrylamide Gel Electrophoresis (PAGE)</a></li>
+                    <li><a href="#experiment4">Expt.4 Agarose Gel Electrophoresis</a></li>
+                    <li><a href="#experiment5">Expt.5 DLS</a></li>
+                    <li><a href="#experiment6">Expt.6 Output Concentration measurement</a></li>
                 </ul>
             </div>
         </aside>

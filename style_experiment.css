@@ -1,21 +1,25 @@
 .side-item {
     position: sticky;
     top: 150px;
-    padding: 0 5%;
-    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .side-item ul {
-    list-style-position: inside; 
+    list-style-position: outside; 
+    font-size: 1.0em;
+    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
     display: flex;
-    width: 90%;
+    width: 95%;
     min-width: 0;
     font-weight: normal;
     margin: 0; /* マージンを削除 */
-    padding: 0 5%; /* 内側の余白に変更 */
+    padding: 2.5%; /* 内側の余白に変更 */
 }
 
 .main {
@@ -24,6 +28,7 @@
 
 .aside {
     flex: 2;
+    padding: 0;
 }
 
 /*ここから本文用のスタイル*/
@@ -47,6 +52,21 @@ img {
     flex: 1;
     text-align: center;
     margin: 8px 0;
+}
+
+.sample-group {
+    flex: 1;
+    margin-top: 0;
+    padding-top: 0;
+}
+.sample-group h4 {
+    margin-top: 0; /* タイトルとリストの間隔（必要に応じて調整） */
+    margin-bottom: 4px;
+    text-align: center;
+}
+.sample-conditions {
+    text-align: left;
+    margin: 0;
 }
 
 .table-block .table-title {
