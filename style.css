@@ -151,6 +151,8 @@ nav {
     margin-top: 2px;
     margin-bottom: 0px;
     padding: 0;
+    font-size: 1.0em;
+    font-weight: normal; /* 太字を解除 */
 }
 
 /* 移動先のセクションや見出し要素など、全てに適用します */
