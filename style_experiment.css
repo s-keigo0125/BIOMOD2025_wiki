@@ -127,3 +127,6 @@ img {
 .figure-block .img-item .small-image {
     width : 48%;
 }
+.figure-block .img-item .middle-image {
+    width : 65%;
+}

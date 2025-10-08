@@ -149,7 +149,7 @@
         </section>
 
         <section id="experiment5">
-        <h2>Experiment 5A Dynamic Light Scattering (DLS) Buffer Optimization</h2>
+        <h2>Experiment 5 Dynamic Light Scattering (DLS) Buffer Optimization</h2>
         <h3 class="sub">Objective</h3>
         <h3>
         バッファーの塩濃度を変更して、ゲルの形成に適切なバッファーの塩濃度を決定すること。
@@ -180,7 +180,7 @@
                 <figure class="img-item">
                     <img src="image/DLS_A.png" alt="DLS Buffer Optimization Result" id="Fig5A.a">
                 </figure>
-                <h3 class="figure-title">Figure 5A-a. DLS Buffer Optimization Result 3枚に分けるか検討</h3>
+                <h3 class="figure-title">Figure 5a. DLS Buffer Optimization Result 3枚に分けるか検討</h3>
         </div>
         <h3>
         グラフの1000 nm から10000 nm の間にピークが確認された。また、NaCl塩のA群では濃度を変化させても、μオーダーのピーク強度は大きな変化は確認できなかった。一方、MgCl2塩のB群では塩濃度を大きくするとμオーダーのピーク強度は小さくなっていることが確認された。
@@ -191,12 +191,44 @@
         <h3>
         本実験でDLS測定を行った結果、1000 nm から 10000 nm の間にピークが確認されたことから、数 μ から数十 μ オーダーの構造物が形成されていると予想される。結果を踏まえて、本プロジェクトではバッファーの塩をMgCl2にして、濃度は12.5mMで使用することに決定した。これは、この実験では低濃度帯であればピークの出現位置や強度に顕著な差異は確認されず、かつ12.5 mM がエントロピードリブン回路の最適動作条件に相当するためである。
         この次には、今回の実験では測定できなかった、DNA濃度を変更したときのサイズ分布の評価をDLSを用いて行う。
-        </h3>
-        
+        </h3>      
         </section>
 
         <section id="experiment6">
-        <h2>Experiment 6 Entropy Driven Circuit Output Concentration measurement</h2>
+        <h2>Experiment 6 DLS DNA Concentration Evaluation</h2>
+        <h3 class="sub">Objective</h3>
+        <h3>
+        ハイドロゲルモチーフのDNA濃度を変更し、DLSを用いて粒子サイズ分布の評価をすること。
+        </h3>
+        <h3 class="sub">Method</h3>
+        <h3>
+        我々は以下のTable 6aに示すようにDNA濃度が異なる5種類のサンプルを調製した。測定用のサンプルは、基本的に 20 μLとなるように調製したが、200 μMのサンプルのみ15.6 μLで調製した。
+        アニーリング途中でやめたとことかの書き方は検討
+        そして、それぞれのサンプルごとにDLSを用いて粒子の大きさの分布を測定した。DLSの測定には、Malvern Panalytical社のZetasizer Ultra Red Label を使用し、測定温度は 25℃、測定時間は auto設定で行った。
+        </h3>
+        <div class="table-block">
+            <h3 class="table-title">Table 6a. Sample Recipe</h3>
+            <figure class="img-item">
+                <img src="image/DNA_Concentration.png" alt="DNA Concentration">
+            </figure>
+        </div>
+        <h3 class="sub">Result</h3>
+        <div class="figure-block">
+                <figure class="img-item">
+                    <img src="image/DLS_DNA_Concentration.png" alt="DLS DNA Concentration Result" class="middle-image">
+                </figure>
+                <h3 class="figure-title">Figure 6a. DLS Result この図は色ちょっといじるand 400μMは入れない方がよくない?</h3>
+        </div>
+        <h3>図より、濃度が40 μM以下の低濃度域ではμmオーダーのピークが確認されないもしくは強度が小さいことが確認された。</h3>
+        <h3 class="sub">Discussion and Next Step</h3>
+        <h3>
+        DNA濃度が小さいときにはμMオーダーでの構造物は形成されていないことが確認され、本プロジェクトで設計した配列では数百μM程度の濃度が必要であると考えられる。
+        思ったよりも高い濃度必要だから配列設計の部分から見直さないとみたいなことを書くか書かないか。
+        </h3>
+        </section>
+
+        <section id="experiment7">
+        <h2>Experiment 7 Entropy Driven Circuit Output Concentration measurement</h2>
         <h3 class="sub">Objective</h3>
         <h3>
         エントロピードリブン回路によって生成されるoutputの濃度を定量的に計測すること。
@@ -227,13 +259,13 @@
         
         <div class="split-in-half">
             <div class="table-block">
-                <h3 class="table-title">Table 6a. Catalyst Concentration</h3>
+                <h3 class="table-title">Table 7a. Catalyst Concentration</h3>
                 <figure class="img-item">
                     <img src="image/Catalyst.png" alt="Catalyst Concentration" class="small-image">
                 </figure>
             </div>
             <div class="table-block">
-                <h3 class="table-title">Table 6b. Output Concentration</h3>
+                <h3 class="table-title">Table 7b. Output Concentration</h3>
                 <figure class="img-item">
                     <img src="image/Output.png" alt="Output Concentration" class="small-image">
                 </figure>
@@ -245,7 +277,7 @@
             <figure class="img-item">
                 <img src="image/Output_Concentration.png" alt="Output Concentration Result">
             </figure>
-            <h3 class="figure-title">Figure 6a. Output Concentration Result</h3>
+            <h3 class="figure-title">Figure 7a. Output Concentration Result</h3>
         </div>
         <h3>後で追加する</h3>
 

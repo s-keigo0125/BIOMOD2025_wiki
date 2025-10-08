@@ -158,7 +158,7 @@ nav {
     font-weight: normal; /* 太字を解除 */
 }
 .content h3.sub {
-    font-size: 1.5em; /* 文字を大きく */
+    font-size: 1.4em; /* 文字を大きく */
     font-weight: bold; /* subクラスは太字 */
     margin-top: 20px;
     margin-bottom: 4px;
