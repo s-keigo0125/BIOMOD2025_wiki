@@ -123,6 +123,9 @@ nav {
 
 .title {
     text-align: center;
+    font-size: 1.3em;
+    font-family: "Times New Roman", "Georgia", serif;
+
 }
 
 .title::after {
@@ -151,8 +154,12 @@ nav {
     margin-top: 2px;
     margin-bottom: 0px;
     padding: 0;
-    font-size: 1.0em;
+    font-size: 1.2em;
     font-weight: normal; /* 太字を解除 */
+}
+.content .text {
+    text-align: justify;
+    line-height: 1.3em; /* 行間を少し広げる */
 }
 
 /* 移動先のセクションや見出し要素など、全てに適用します */

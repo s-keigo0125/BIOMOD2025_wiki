@@ -7,7 +7,7 @@
 
 .side-item ul {
     list-style-position: outside; 
-    font-size: 1.0em;
+    font-size: 1.2em;
     text-align: left;
     padding: 0;
     margin: 0;
@@ -17,9 +17,23 @@
     display: flex;
     width: 95%;
     min-width: 0;
-    font-weight: normal;
+    font-family: "Times New Roman", "Georgia", serif;
     margin: 0; /* マージンを削除 */
     padding: 2.5%; /* 内側の余白に変更 */
+}
+.container h2 {
+    font-weight: bold; /* デフォルトのh2は太字 */
+    font-size: 2em; /* 文字を大きく */
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.container h3 {
+    font-weight: normal; /* デフォルトのh3は太字を解除 */
+}
+.container h3.sub {
+    font-weight: bold; /* subクラスは太字 */
+    font-size: 1.5em; /* 文字を大きく */
 }
 
 .main {
@@ -29,7 +43,7 @@
 
 .aside {
     flex: 2;
-    padding: 0;
+    padding: 0;;
 }
 
 /*ここから本文用のスタイル*/
@@ -42,24 +56,11 @@ img {
     margin: 16px auto;
 }
 
-.big-image {
-    max-width: 85%;
-    height: auto;
-    display: block;
-    margin: 16px auto;
-}
-
 .split-in-half {
     display: flex;
     gap: 8px;
     align-items: flex-start;
     width: 100%;
-}
-
-.table-block {
-    flex: 1;
-    text-align: center;
-    margin: 8px 0;
 }
 
 .sample-group {
@@ -77,6 +78,11 @@ img {
     margin: 0;
 }
 
+.table-block {
+    flex: 1;
+    text-align: center;
+    margin: 8px 0;
+}
 .table-block .table-title {
     margin-bottom: 4px; /* タイトルと画像の間隔（必要に応じて調整） */
     line-height: 1.1;
@@ -95,27 +101,29 @@ img {
     max-width: 100%;
 }
 
+
 .figure-block {
     flex: 1;
     text-align: center;
     margin: 8px 0;
 }
-
 .figure-block .figure-title {
     margin-top: 4.0px; /* タイトルと画像の間隔（必要に応じて調整） */
     padding-top: 0px;
-    line-height: 1.1;
 }
 .figure-block .img-item {
-    margin-bottom: 0px; /* 下のマージンを削除 */
-    padding-bottom: 0px;
-    width: 100%;
-    max-width: 750px;
+    margin: 0 auto; 
+    padding-bottom: 0;
+    width: 95%;
+    max-width: 720px;
 }
-
 .figure-block .img-item img {
     display: block;
     margin: 0 auto;
     width: 100%;
     height: auto;
+    max-width: 100%;
+}
+.figure-block .img-item .small-image {
+    width : 48%;
 }
