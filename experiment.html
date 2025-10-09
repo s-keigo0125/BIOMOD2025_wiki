@@ -37,12 +37,12 @@
         <section>
         <h2>Overview</h2>
         <h3>
-        実証のために実験を行ったみたいな文章を適当に入れる
+        実証のために実験を行ったみたいな文章を適当に入れる フローチャートみたいなもの
         </h3>
         </section>
         <br>
 
-        <section id="experiment1">
+        <section id="experiment1"><!--エントロピードリブン回路の動作確認*/ -->
         <h2>Experiment 1 Entropy Driven Circuit testing</h2>
         <h3 class="sub">Objective</h3>
         <h3 >
@@ -77,7 +77,7 @@
         </section>
         <br>
 
-        <section id="experiment2">
+        <section id="experiment2"><!--DNAハイドロゲルの形成実験-->
         <h2>Experiment 2 DNA Hydrogel Formation testing</h2>
         <h3 class="sub">Objective</h3>
         <h3>
@@ -129,7 +129,7 @@
         </h3>
         </section>
 
-        <section id="experiment3">
+        <section id="experiment3"><!--PAGE電気泳動-->
         <h2>Experiment 3 Polyacrylamide Gel Electrophoresis (PAGE)</h2>
         <h3 class="sub">Objective</h3>
         <h3>
@@ -161,7 +161,7 @@
         <h3 class="sub">Result</h3>
         <div class="figure-block">
             <figure class="img-item">
-                <img src="image/Page_Result_Expt3.png" alt="PAGE result" class="big-image">
+                <img src="image/Page_Result_Expt3.png" alt="PAGE result" class="middle-image">
             </figure>
             <h3 class="figure-title">Figure 3b. PAGE Result</h3>
         </div>
@@ -180,7 +180,7 @@
         </section>
 
 
-        <section id="experiment4">
+        <section id="experiment4"> <!--アガロース電気泳動-->
         <h2>Experiment 4 Agarose Gel Electrophoresis</h2>
         <h3 class="sub">Objective</h3>
         <h3>
@@ -200,16 +200,39 @@
             <li>#A3 3種類(Strand 1, 2, 3)</li>
             <li>#A4 4種類(Strand 1, 2, 3, 4)</li>
         </ul>
-        </section>
         <h3>
         Sample#Bについては、4種類全てのモチーフ配列（各500 nM）を含む溶液に対し、output鎖（500 nM）、fuel鎖（500 nM）、またはバッファーのみを含む溶液を、異なる体積比で添加した9種類のサンプルを調製した（Table X）。モチーフ配列溶液と添加溶液の体積比は2:1、1:1、1:2の3通りとし、総量は2.5 μLとした。バッファー濃度は全サンプルで一定に保たれた。
         </h3>
+        <h3>
+        全てのサンプルについて、95℃で5分間加熱後、1分ごとに-1℃の速度で4℃まで冷却するアニーリングを行った。Output鎖またはfuel鎖を添加したサンプルについては、添加後、室温で30分間放置した。各サンプルには、ローディングバッファー0.5 μLを添加し、最終体積を3.0 μLとした。そして、3%アガロースゲルをつくり、サンプルをゲルにロードし、100 Vの定電圧で30分間泳動した。DNA集合体の構造を保持するため、泳動は4℃の冷蔵庫内で実施した。比較用として20 bp DNA Ladderを使用した。泳動後、ゲルを蛍光イメージャーで観察し、バンドパターンを解析した。
+        </h3>
+
         <div class="table-block">
             <h3 class="table-title">Table 4a. Sample#B Condition</h3>
             <figure class="img-item">
                 <img src="image/SampleB_Expt3.png" alt="Sample#B Condition">
             </figure>
         </div>
+
+        <h3 class="sub">Result</h3>
+        <div class="figure-block">
+            <figure class="img-item">
+                <img src="image/Agarose_Result_Expt4.png" alt="Result" class="big-image">
+            </figure>
+            <h3 class="figure-title">Figure 4a. Agarose Gel Electrophoresis Result</h3>
+        </div>
+        <h3>
+        同じ比率で入れたもの同士で比較すると、outputのほうが薄くなってることが確認された。
+        また、outputを加えたサンプル同士を比較すると、output濃度が高いほうがバンドが薄くなっていることが確認された。
+        </h3>
+
+        <h3>Discussion and Next Step</h3>
+        <h3>
+        実験結果から、output鎖の添加により、DNA集合体の形成が抑制されている可能性が示唆される。しかし、最初の実験系では体積比を変化させたため、モチーフ配列とoutput鎖の両方の濃度が同時に変化しており、バンド強度の低下がDNA全体の濃度低下によるものか、output鎖による集合体解離によるものかを区別することができなかった。
+        そこで、モチーフ配列の濃度を全サンプルで一定に保ちながら、output鎖とfuel鎖の濃度のみを変化させる実験を行う。
+        </h3>
+        </section>
+        <br>
 
         <section id="experiment5">
         <h2>Experiment 5 Dynamic Light Scattering (DLS) Buffer Optimization</h2>
