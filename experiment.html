@@ -141,9 +141,10 @@
         そして、ポリアクリルアミド10%ゲル（TEMED 0.1%, APS 0.1%）を作成し、作成したゲルのウェルに溶液を注入し、100 Vの定電圧で1時間電気泳動を実施した。
         泳動後、ゲルをSYBRGOLDで染色し、UV照射下でバンドの移動度を観察した。
         </h3>
-        <div class="sample-group">
-            <h4>Sample Condition ここはもっといい表示方法がありそうだけど</h4>
-            <ul class="grid-sample-conditions">
+
+        <div class="sample-group-center">
+            <h3>Sample Condition ここはもっといい表示方法がありそうだけど</h3>
+            <ul class="sample-conditions">
                 <li>1種類のみの溶液: 4種類（例：strand 1のみ）</li>
                 <li>2種類の溶液: 6種類（例：strand 1 + strand 2）</li>
                 <li>3種類の溶液: 4種類（例：strand 1 + strand 2 + strand 3）</li>
@@ -193,7 +194,7 @@
         本実験では、13のサンプルを調製した。DNAモチーフ配列の種類数を変えたサンプル4種(Sample#A)と、4種類全てのモチーフ配列に対してoutput鎖、fuel鎖、またはバッファーのみを様々な比率で添加したサンプル9種(Sample#B)である。
         Sample#Aについては、各DNAモチーフ配列を250 nM、バッファー（MgCl₂ 12.5 mM、Tris 10 mM、EDTA 1.0 mM）中で混合し、総量2.5 μLの4つのサンプルを以下の通り調製した。
         </h3>
-        <h4 class="sample-title">Sample#A Condition</h4>
+        <h4 class="sample-title">Sample#A Condition ここはもっといい表示方法がありそうだけど</h4>
         <ul>
             <li>#A1 1種類のみ(Strand 3)</li>
             <li>#A2 2種類(Strand 2, 3)</li>
@@ -210,7 +211,7 @@
         <div class="table-block">
             <h3 class="table-title">Table 4a. Sample#B Condition</h3>
             <figure class="img-item">
-                <img src="image/SampleB_Expt3.png" alt="Sample#B Condition">
+                <img src="image/SampleB_Expt4.png" alt="Sample#B Condition">
             </figure>
         </div>
 
@@ -234,7 +235,46 @@
         </section>
         <br>
 
-        <section id="experiment5">
+        <section id="experimentx"><!--アガロースゲル2ndtime-->
+        <h2>Experiment X Agarose Gel Electrophoresis 2nd time</h2>
+        <h3 class="sub">Objective</h3>
+        <h3>
+        モチーフ配列の濃度を一定に保ちながらoutput鎖とfuel鎖の濃度のみを変化させることで、前実験で観察されたバンド強度の低下が、output鎖によるスティッキーエンド結合の解離に起因するかどうかを確認する。
+        </h3>
+        <h3 class="sub">Method</h3>
+        <h3>
+        本実験では、実験4と同様の手順で11種類のサンプルを2.5 μL調製した。
+        DNAモチーフ配列の種類数を変化させた4種（Sample#A）と、4種類すべてのモチーフ配列に対してoutput鎖、fuel鎖、またはバッファーを添加した7種（Sample#B）で構成される。
+        Sample#Aは、各DNAモチーフ配列（250 nM）をバッファー（MgCl₂ 12.5 mM、Tris 10 mM、EDTA 1.0 mM）中で混合して調製した。（詳細は実験4参照）
+        Sample#Bは、4種類すべてのモチーフ配列（各500 nM）を含む溶液に、output鎖、fuel鎖、またはバッファーのみを添加した3条件で、表x.xのように計7サンプルを作製した。
+        </h3>
+        <h3>
+        全てのサンプルについて、95℃で5分間加熱後、1分ごとに-1℃の速度で4℃まで冷却するアニーリングを行った。Output鎖またはfuel鎖を添加したサンプルについては、添加後、室温で30分間放置した。各サンプルには、ローディングバッファー0.5 μLを添加し、最終体積を3.0 μLとした。
+        そして、3%アガロースゲルをつくり、サンプルをゲルにロードし、100 Vの定電圧で30分間泳動した。DNA集合体の構造を保持するため、泳動は4℃の冷蔵庫内で実施した。比較用として20 bp DNA Ladderを使用した。泳動後、ゲルを蛍光イメージャーで観察し、バンドパターンを解析した。
+        </h3>
+        <div class="table-block">
+            <h3 class="table-title">Table 5.a. Sample#B Condition</h3>
+            <figure class="img-item">
+                <img src="image/SampleB_Expt5.png" alt="Sample#B Condition">
+            </figure>
+        </div>
+        <h3 class="sub">Result</h3>
+        <div class="figure-block">
+            <figure class="img-item">
+                <img src="image/Agarose_Result_Expt5.png" alt="Result" class="middle-image">
+            </figure>
+        <h3 class="figure-title">Figure 5.a. Agarose Gel Electrophoresis 2nd time Result</h3>
+        </div>
+        <h3>
+        Outputを1000μMの濃度で添加したサンプル(B1)は他のサンプルに比べてバンドが薄くなっていることが確認された。
+        </h3>
+        <h3 class="sub">Discussion and Next Step</h3>
+        <h3>
+        実験の結果から、output鎖の添加により、DNA集合体の形成が抑制されている可能性が示唆された。特に、output鎖を高濃度（1000 μM）で添加したサンプルでは、バンド強度の顕著な低下が観察され、これはoutput鎖によるスティッキーエンド間の結合解離が集合体のサイズ減少に寄与していることが示唆された。
+        </h3>
+        </section>
+
+        <section id="experiment5"><!--DLSバッファー最適化-->
         <h2>Experiment 5 Dynamic Light Scattering (DLS) Buffer Optimization</h2>
         <h3 class="sub">Objective</h3>
         <h3>
@@ -375,7 +415,7 @@
         </h3>
         </section>
 
-        <section id="experiment8">  
+        <section id="experiment8">  <!--DLSスティッキーエンド解離-->
         <h2>Experiment 8 Assessment of sticky ends dissociation using DLS</h2>
         <h3 class="sub">Objective</h3>
         <h3>
@@ -388,6 +428,70 @@
         まず、ベース溶液として、ゲルのモチーフ配列4種類（各 80μM）とバッファー(MgCl2 12.5 mM、 Tris 10 mM、 EDTA 1.0mM )からなる溶液を16 μL調製し、この溶液の初期の分子サイズ分布をDLSで測定した。
         初期測定後、このベース溶液（16μL）に対し、output鎖またはfuel鎖を含む溶液を 4μL 添加し、全液量が 20μL となるようにした。この希釈により、ゲルのモチーフ配列の最終濃度は各 64 μM、新たに加えたDNA鎖は9.2 μMとなったが、バッファーの濃度は測定前後で一定に保たれた。DLSの測定には、Malvern Panalytical社のZetasizer Ultra Red Label を使用し、測定温度は 25℃、測定時間は auto設定で行った。
         </h3>
+
+        <h3 class="sub">Result</h3>
+        <div class="figure-block">
+            <figure class="img-item">
+                <img src="image/DLS_Sticky_end.png" alt="Sticky end dissociation Result" class="big-image">
+            </figure>
+            <h3 class="figure-title">Figure 8a. Sticky end dissociation Result</h3>
+        </div>
+        <h3>
+        図はまだいいのができてない
+        新たに入れたのがOutputでもFuelでもバッファーだけでも大きな差は見られなかった。
+        また、アニーリングの時期による変化も大きな変化は見られなかった。
+        </h3>
+        <h3 class="sub">Discussion and Next Step</h3>
+        <h3>
+        本実験において、本来であればゲルモチーフ間の結合を切ると期待されるoutput鎖の添加後でも、DLSで測定される粒子サイズに有意な減少が観察されなかった。
+        この結果から、スティッキーエンド間の結合が予想以上に安定であり、output鎖による置換反応が十分に進行しなかった可能性が考えられる。また、仮に部分的な解離が起きていたとしても、ゲルモチーフ全体に対してスティッキーエンド部分が占める割合は小さいため、DLS測定で検出可能なほどの粒子サイズ変化として現れなかった可能性もある。
+        そこで、output鎖が実際にスティッキーエンド間の結合を切断できるかをより直接的に確認するため、4種類のモチーフのうち2種類を選び、output鎖を添加したサンプルを作製し、電気泳動により反応の進行を評価することとした。
+        </h3>
+        </section>
+
+        <section id="experiment9">  <!--PAGEスティッキーエンド解離-->
+        <h2>Experiment 9 Assessment of sticky ends dissociation using PAGE</h2>
+        <h3 class="sub">Objective</h3>
+        <h3>
+        Output鎖がスティッキーエンド間の結合を実際に切断できるかを、電気泳動により直接確認することを目的とする。
+        </h3>
+        <h3 class="sub">Method</h3>
+        <h3>
+        本実験では、以下のTable 9a.に示すように8種類のサンプルを各5.0 μL調製した。各サンプルには、strand2、strand3、output 鎖、および fuel 鎖を必要に応じて添加し、MgCl₂ 12.5 mM、Tris 10 mM、EDTA 1.0 mM を含むバッファー中で混合した。
+        strand2、strand3、output 鎖はいずれも最終濃度が 0.25 μM、fuel 鎖は最終濃度が 0.5 μM となるように調製した。各サンプルにローディングバッファー1.0 μLを加えて混合した。そして、10%ポリアクリルアミドゲル（TEMED 0.1%、APS 0.1%）を作成し、調製したサンプルをゲルにロードし、100 Vの定電圧下で50分間泳動を行った。泳動後、ゲルをSYBR Goldで染色し、UV照射下でバンドの移動度を観察した。
+        </h3>
+
+        <div class="table-block">
+            <h3 class="table-title">Table 9a. Sample Recipe</h3>
+            <figure class="img-item">
+                <img src="image/PAGE_Sticky_end.png" alt="Sample Recipe">
+            </figure>
+        </div>
+
+        <h3 class="sub">Result</h3>
+        <div class="figure-block">
+            <figure class="img-item">
+                <img src="image/PAGE_Result_Expt9.png" alt="PAGE Result" class="middle-image">
+            </figure>
+            <h3 class="figure-title">Figure 9a. Sticky end dissociation Result</h3>
+            <h3>これ多分図がミスってる</h3>
+        </div>
+        <h3>
+        Strand2と3の2種類のみが入ったレーン4は上のほうにバンドが確認された。
+        2種類のDNAモチーフを入れているLane4と6を比較すると、大きな変化は見受けられなかった。
+        </h3>
+
+        <h3 class="sub">Discussion and Next Step</h3>
+        <h3>
+        結果から、両モチーフ間でスティッキーエンドを介した結合体が形成されていることが示唆された一方で、Outputを加えてもスティッキーエンド間の結合は切断されずに保持されている可能性が示唆される。
+        本実験では、DNA 溶液を混合後に 4 °C で約 30 分間放置し、その後 output 鎖を添加してさらに 30 分間冷蔵下で放置した。この処理条件では、急冷により DNA モチーフ間のスティッキーエンド結合が強く安定化し、反応の進行が抑制された可能性がある。
+        これを踏まえて、次の実験では混合後および output 鎖添加後の反応を室温で行い、温度条件が結合状態や反応効率に及ぼす影響を検証する。
+        </h3>
+        </section>
+        <br>
+
+        <section id="Experiment10">  <!--PAGEスティッキーエンド解離2nd time-->
+
         </section>
 
         </main>
