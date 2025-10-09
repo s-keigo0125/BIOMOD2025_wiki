@@ -86,6 +86,8 @@
         <h3 class="sub">Method</h3>
         <h3>
         バッファー溶液として、下の表にしめすようにMgCl2の入ったもの(Buffer#1)と、NaClの入ったもの(Buffer#2)の2種類を用意した。
+        <a href="design.html#appendix">DesignのAppendix</a>に示したDNAハイドロゲルの各配列の濃度が400μM、全体として溶液が20μLになるように4つのDNA溶液とバッファー溶液、純水を混合して冷蔵庫に放置した後、ゲルができるかどうかを確認した。
+        また、同じ溶液に対して、95℃(5分)、その後1分ごとに-1℃で4℃まで温度を下げるアニーリングを行った。
         </h3>
         <div class="split-in-half">
             <div class="table-block">
@@ -101,11 +103,6 @@
                 </figure>
             </div>
         </div>
-
-        <h3>
-        <a href="design.html#appendix">DesignのAppendix</a>に示したDNAハイドロゲルの各配列の濃度が400μM、全体として溶液が20μLになるように4つのDNA溶液とバッファー溶液、純水を混合して冷蔵庫に放置した後、ゲルができるかどうかを確認した。
-        また、同じ溶液に対して、95℃(5分)、その後1分ごとに-1℃で4℃まで温度を下げるアニーリングを行った。
-        </h3>
         <div class="table-block">
             <h3 class="table-title">Table 2c. Solution Recipe</h3>
             <figure class="img-item">
@@ -145,26 +142,42 @@
         泳動後、ゲルをSYBRGOLDで染色し、UV照射下でバンドの移動度を観察した。
         </h3>
         <div class="sample-group">
-            <h4>Sample Condition</h4>
-            <ul class="sample-conditions">
+            <h4>Sample Condition ここはもっといい表示方法がありそうだけど</h4>
+            <ul class="grid-sample-conditions">
                 <li>1種類のみの溶液: 4種類（例：strand 1のみ）</li>
                 <li>2種類の溶液: 6種類（例：strand 1 + strand 2）</li>
                 <li>3種類の溶液: 4種類（例：strand 1 + strand 2 + strand 3）</li>
                 <li>4種類の溶液: 1種類</li>
             </ul>
         </div>
+
         <div class="figure-block">
-                <figure class="img-item">
-                    <img src="image/PAGE_setup.png" alt="PAGE setup" id="Fig3a">
-                </figure>
-                <h3 class="figure-title">Figure 3a. PAGE Setup</h3>
+            <figure class="img-item">
+                <img src="image/PAGE_setup.jpg" alt="PAGE setup" class="middle-image">
+            </figure>
+            <h3 class="figure-title">Figure 3a. PAGE Setup</h3>
+        </div>
 
         <h3 class="sub">Result</h3>
         <div class="figure-block">
-                <figure class="img-item">
-                    <img src="image/PAGE_result.png" alt="PAGE result" id="Fig3b">
-                </figure>
-                <h3 class="figure-title">Figure 3b. PAGE Result</h3>
+            <figure class="img-item">
+                <img src="image/PAGE_Result.png" alt="PAGE result" class="big-image">
+            </figure>
+            <h3 class="figure-title">Figure 3b. PAGE Result</h3>
+        </div>
+        <h2>対応表みたいなのつくらんと。</h2>
+        <h3>
+        全部混ぜた溶液では上のほうにバンドができていることが確認された。
+        また、2種類混ぜた溶液では1と3、2と4の組み合わせでは1種類だけの時と同じ位置にバンドができているが、それ以外の組み合わせでは1種類だけの時よりも上にもバンドができていることが確認された。
+        </h3>
+        <h3 class="sub">Discussion and Next Step</h3>
+        <h3>
+        電気泳動の結果から、設計したDNA配列は意図したとおりに結合していることが確認された。特に、2種類のDNA鎖を混ぜた溶液について、相補的な配列を持つ組み合わせでのみ安定な二本鎖構造が確認され、DNA鎖間の特異的な結合能が証明された。また、全種類（Strand 1, 2, 3, 4）を混ぜた溶液では、比較のために用いた20 bp DNA Ladderの最大サイズ（300 bp）よりも著しく移動度が遅い位置にバンドが確認され、複数の鎖による高次集合体が形成されていることが示唆された。
+        一方で、全種類のDNAを混ぜた溶液の蛍光バンドは、ゲル上部のウェル付近に集中的に固まっており、ポリアクリルアミドゲル（PAGE）の分離限界を超えていることが示唆された。これは、形成された集合体のサイズがPAGEで分離可能な分子量の範囲を超えていることを意味する。したがって、集合体のサイズをより詳細に解析するため、以下の2つの定量的・スケール調整アプローチが必要であると判断した。
+        <ul>
+            <li>1: アガロースゲル電気泳動の実施。より大きな分子量の分離に適したアガロースゲル電気泳動を用い、集合体のサイズをより適切なスケールで定性的に比較・解析する。</li>
+            <li>2: 動的光散乱（DLS）測定の実施。電気泳動は分子の移動度に基づく定性的な分析に留まるため、溶液中での実際の分子サイズ分布を定量的に評価するため、動的光散乱法（DLS）による測定を並行して実施する。</li>
+        </ul>
         </section>
 
 

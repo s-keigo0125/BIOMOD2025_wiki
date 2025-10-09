@@ -25,15 +25,20 @@
     font-weight: bold; /* デフォルトのh2は太字 */
     font-size: 2em; /* 文字を大きく */
     text-align: left;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 .container h3 {
     font-weight: normal; /* デフォルトのh3は太字を解除 */
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .container h3.sub {
     font-weight: bold; /* subクラスは太字 */
     font-size: 1.5em; /* 文字を大きく */
+    margin-top: 20px;
+    margin-bottom: 2px;
+    padding: 0 0;
 }
 
 .main {
@@ -75,6 +80,16 @@ img {
 }
 .sample-conditions {
     text-align: left;
+    margin: 0;
+}
+
+.grid-sample-conditions {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2列 */
+    grid-template-rows: 1fr 1fr; /* 2行 */
+    gap: 0px; /* アイテム間の余白 */
+    list-style-type: disc;
+    padding: 0;
     margin: 0;
 }
 
@@ -129,4 +144,7 @@ img {
 }
 .figure-block .img-item .middle-image {
     width : 65%;
+}
+.figure-block .img-item .big-image {
+    width : 85%;
 }
