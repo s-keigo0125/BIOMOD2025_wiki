@@ -92,6 +92,12 @@ img {
     padding: 0;
     margin: 0;
 }
+.table-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 4px; /* タイトルと画像の間隔（必要に応じて調整） */
+    line-height: 1.1;
+}
 
 .table-block {
     flex: 1;

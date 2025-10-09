@@ -14,7 +14,7 @@ header {
     color: #fff;
     position: sticky;
     top: 0;
-    height: 45px; /* ヘッダーの高さを指定 */
+    height: 40px; /* ヘッダーの高さを指定 */
     width: 100%;
 }
 
@@ -173,11 +173,11 @@ nav {
 
 section[id] { 
     /* ヘッダーの高さ 85px よりも少し大きめの値を設定すると安心です */
-    scroll-margin-top: 90px; 
+    scroll-margin-top: 100px; 
 }
 
 img[id]{
-    scroll-margin-top: 90px; 
+    scroll-margin-top: 100px; 
 }
 
 .image-row {
