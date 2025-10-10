@@ -1,6 +1,6 @@
 .side-item {
     position: sticky;
-    top: 150px;
+    top: 110px;
     padding: 0;
     margin: 0;
 }
@@ -48,7 +48,8 @@
 
 .aside {
     flex: 2;
-    padding: 0;;
+    padding: 0;
+    font-size: 0.85em;
 }
 
 /*ここから本文用のスタイル*/
