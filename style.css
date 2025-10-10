@@ -145,10 +145,10 @@ nav {
 }
 
 .content h2 {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 4px;
     padding: 0;
-    font-size : 1.8em;
+    font-size : 2.0em;
 }
 .content h3 {
     margin-top: 4px;
@@ -192,6 +192,14 @@ img[id]{
     justify-content: center;
     align-items: flex-end;
     gap: 24px;
+    margin: 8px 0;
+}
+
+.image-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
     margin: 8px 0;
 }
 

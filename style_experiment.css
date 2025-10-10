@@ -32,6 +32,9 @@
     font-weight: normal; /* デフォルトのh3は太字を解除 */
     margin-top: 0px;
     margin-bottom: 0px;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    text-align: justify; /* 両端揃え */
 }
 .container h3.sub {
     font-weight: bold; /* subクラスは太字 */
@@ -104,6 +107,7 @@ img {
     font-size: 1.1em;
     margin-bottom: 4px; /* タイトルと画像の間隔（必要に応じて調整） */
     line-height: 1.1;
+    text-align: center; /* キャプションは中央揃え */
 }
 
 .table-block {
@@ -138,6 +142,7 @@ img {
 .figure-block .figure-title {
     margin-top: 4.0px; /* タイトルと画像の間隔（必要に応じて調整） */
     padding-top: 0px;
+    text-align: center; /* キャプションは中央揃え */
 }
 .figure-block .img-item {
     margin: 0 auto; 

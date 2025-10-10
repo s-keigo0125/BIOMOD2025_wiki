@@ -1,0 +1,241 @@
+<svg viewBox="0 0 1400 2000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#DBEAFE" stopOpacity="1" />
+      <stop offset="100%" stopColor="#BFDBFE" stopOpacity="1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#D1FAE5" stopOpacity="1" />
+      <stop offset="100%" stopColor="#A7F3D0" stopOpacity="1" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#E9D5FF" stopOpacity="1" />
+      <stop offset="100%" stopColor="#D8B4FE" stopOpacity="1" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#FED7AA" stopOpacity="1" />
+      <stop offset="100%" stopColor="#FDBA74" stopOpacity="1" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#CCFBF1" stopOpacity="1" />
+      <stop offset="100%" stopColor="#99F6E4" stopOpacity="1" />
+    </linearGradient>
+    <linearGradient id="indigoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#E0E7FF" stopOpacity="1" />
+      <stop offset="100%" stopColor="#C7D2FE" stopOpacity="1" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#FECACA" stopOpacity="1" />
+      <stop offset="100%" stopColor="#FCA5A5" stopOpacity="1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#1e40af"/>
+    </marker>
+  </defs>
+  
+  <rect width="1400" height="2000" fill="#E0F2FE"/>
+  
+  <text x="700" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    Hungry Gel System Experimental Flowchart
+  </text>
+  
+  <rect x="350" y="100" width="700" height="80" rx="10" fill="#EFF6FF" stroke="#3b82f6" stroke-width="3"/>
+  <text x="700" y="130" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e3a8a">
+    Exp 1: Entropy-Driven Circuit Testing
+  </text>
+  <text x="700" y="160" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#374151">
+    Fluorescence measurement to confirm circuit operation
+  </text>
+  
+  <line x1="700" y1="180" x2="700" y2="210" stroke="#1e40af" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <rect x="350" y="210" width="700" height="80" rx="10" fill="#EFF6FF" stroke="#3b82f6" stroke-width="3"/>
+  <text x="700" y="240" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e3a8a">
+    Exp 2: Output Concentration Measurement
+  </text>
+  <text x="700" y="270" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#374151">
+    Quantification of Output DNA (10x amplification confirmed)
+  </text>
+  
+  <line x1="700" y1="290" x2="700" y2="320" stroke="#1e40af" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <rect x="350" y="320" width="700" height="80" rx="10" fill="#F0FDF4" stroke="#10b981" stroke-width="3"/>
+  <text x="700" y="350" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#065f46">
+    Exp 3: DNA Hydrogel Formation Testing
+  </text>
+  <text x="700" y="380" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#374151">
+    Gel formation test - <tspan fill="#dc2626" font-weight="bold">No gelation observed</tspan>
+  </text>
+  
+  <line x1="700" y1="400" x2="700" y2="430" stroke="#059669" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <rect x="350" y="430" width="700" height="80" rx="10" fill="#FAF5FF" stroke="#a855f7" stroke-width="3"/>
+  <text x="700" y="460" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#581c87">
+    Exp 4: PAGE Analysis
+  </text>
+  <text x="700" y="490" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#374151">
+    Confirmation of DNA binding - Higher-order aggregates detected
+  </text>
+  
+  <line x1="700" y1="510" x2="700" y2="540" stroke="#9333ea" stroke-width="3"/>
+  <line x1="700" y1="540" x2="400" y2="540" stroke="#9333ea" stroke-width="3"/>
+  <line x1="700" y1="540" x2="1000" y2="540" stroke="#9333ea" stroke-width="3"/>
+  <line x1="400" y1="540" x2="400" y2="570" stroke="#9333ea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="1000" y1="540" x2="1000" y2="570" stroke="#9333ea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <rect x="230" y="570" width="340" height="65" rx="8" fill="#F0FDFA" stroke="#14b8a6" stroke-width="2"/>
+  <text x="400" y="595" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#134e4a">
+    Exp 8: AGE Size Evaluation
+  </text>
+  <text x="400" y="618" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">
+    Size evaluation - Band intensity decreased with Output
+  </text>
+  
+  <line x1="400" y1="635" x2="400" y2="660" stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <rect x="230" y="660" width="340" height="65" rx="8" fill="#F0FDFA" stroke="#14b8a6" stroke-width="2"/>
+  <text x="400" y="685" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#134e4a">
+    Exp 9: AGE Output Analysis
+  </text>
+  <text x="400" y="708" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">
+    Fixed concentration test - Band decrease at high Output
+  </text>
+  
+  <rect x="830" y="570" width="340" height="65" rx="8" fill="#FFF7ED" stroke="#f97316" stroke-width="2"/>
+  <text x="1000" y="595" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#7c2d12">
+    Exp 5: DLS Buffer Optimization
+  </text>
+  <text x="1000" y="618" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">
+    Salt optimization - MgCl2 12.5mM selected
+  </text>
+  
+  <line x1="1000" y1="635" x2="1000" y2="660" stroke="#ea580c" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <rect x="830" y="660" width="340" height="65" rx="8" fill="#FFF7ED" stroke="#f97316" stroke-width="2"/>
+  <text x="1000" y="685" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#7c2d12">
+    Exp 6: DLS DNA Concentration
+  </text>
+  <text x="1000" y="708" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">
+    DNA concentration effects - Low assembly efficiency
+  </text>
+  
+  <line x1="1000" y1="725" x2="1000" y2="750" stroke="#ea580c" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <rect x="830" y="750" width="340" height="65" rx="8" fill="#FFF7ED" stroke="#f97316" stroke-width="2"/>
+  <text x="1000" y="775" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#7c2d12">
+    Exp 7: DLS Sticky-End Dissociation
+  </text>
+  <text x="1000" y="798" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">
+    Output addition effects - <tspan fill="#dc2626" fontWeight="bold">No change</tspan>
+  </text>
+  
+  <rect x="350" y="860" width="700" height="70" rx="10" fill="#EEF2FF" stroke="#6366f1" stroke-width="3"/>
+  <text x="700" y="885" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#312e81">
+    Exp 10: PAGE Output Displacement (1st)
+  </text>
+  <text x="700" y="910" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#374151">
+    Output cleavage test - <tspan fill="#dc2626" fontWeight="bold">No cleavage (4C)</tspan>
+  </text>
+  
+  <line x1="400" y1="725" x2="400" y2="830" stroke="#0d9488" stroke-width="2"/>
+  <line x1="1000" y1="815" x2="1000" y2="830" stroke="#ea580c" stroke-width="2"/>
+  <line x1="400" y1="830" x2="1000" y2="830" stroke="#64748b" stroke-width="3"/>
+  <line x1="700" y1="830" x2="700" y2="860" stroke="#64748b" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="930" x2="700" y2="960" stroke="#4338ca" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <rect x="350" y="960" width="700" height="70" rx="10" fill="#EEF2FF" stroke="#6366f1" stroke-width="3"/>
+  <text x="700" y="985" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#312e81">
+    Exp 11: PAGE Output Displacement (2nd)
+  </text>
+  <text x="700" y="1010" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#374151">
+    Room temp reaction - <tspan fill="#dc2626" font-weight="bold">Still no cleavage</tspan>
+  </text>
+  
+  <line x1="700" y1="1030" x2="700" y2="1060" stroke="#4338ca" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <rect x="350" y="1060" width="700" height="70" rx="10" fill="#EEF2FF" stroke="#6366f1" stroke-width="3"/>
+  <text x="700" y="1085" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#312e81">
+    Exp 12: PAGE Output Displacement (3rd)
+  </text>
+  <text x="700" y="1110" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#374151">
+    Annealing condition changed - <tspan fill="#dc2626" font-weight="bold">Arm-region binding suspected</tspan>
+  </text>
+  
+  <line x1="700" y1="1130" x2="700" y2="1160" stroke="#4338ca" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <rect x="350" y="1160" width="700" height="70" rx="10" fill="#EEF2FF" stroke="#6366f1" stroke-width="3"/>
+  <text x="700" y="1185" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#312e81">
+    Exp 13: PAGE Output Displacement (4th)
+  </text>
+  <text x="700" y="1210" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#374151">
+    Sticky-end only test - <tspan fill="#dc2626" font-weight="bold">Unstable binding</tspan>
+  </text>
+  
+  <line x1="700" y1="1230" x2="700" y2="1260" stroke="#dc2626" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <rect x="350" y="1260" width="700" height="70" rx="10" fill="#FEF2F2" stroke="#ef4444" stroke-width="3"/>
+  <text x="700" y="1285" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#7f1d1d">
+    Next Step
+  </text>
+  <text x="700" y="1310" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#374151">
+    Reconsider reaction conditions under cooling or fundamental redesign
+  </text>
+  
+  <rect x="150" y="1370" width="1100" height="320" rx="15" fill="white" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="700" y="1410" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    Experimental Series Classification
+  </text>
+  
+  <rect x="200" y="1440" width="30" height="30" rx="5" fill="#EFF6FF" stroke="#3b82f6" stroke-width="2"/>
+  <text x="250" y="1460" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">
+    Exp 1-2: Circuit System
+  </text>
+  <text x="250" y="1478" font-family="Arial, sans-serif" font-size="12" fill="#64748b">
+    Entropy-driven circuit validation
+  </text>
+  
+  <rect x="200" y="1500" width="30" height="30" rx="5" fill="#F0FDF4" stroke="#10b981" stroke-width="2"/>
+  <text x="250" y="1520" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">
+    Exp 3: Gel Formation
+  </text>
+  <text x="250" y="1538" font-family="Arial, sans-serif" font-size="12" fill="#64748b">
+    DNA hydrogel formation test
+  </text>
+  
+  <rect x="200" y="1560" width="30" height="30" rx="5" fill="#FAF5FF" stroke="#a855f7" stroke-width="2"/>
+  <text x="250" y="1580" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">
+    Exp 4: PAGE Analysis
+  </text>
+  <text x="250" y="1598" font-family="Arial, sans-serif" font-size="12" fill="#64748b">
+    Electrophoresis evaluation of DNA binding
+  </text>
+  
+  <rect x="750" y="1440" width="30" height="30" rx="5" fill="#FFF7ED" stroke="#f97316" stroke-width="2"/>
+  <text x="800" y="1460" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">
+    Exp 5-7: DLS Series
+  </text>
+  <text x="800" y="1478" font-family="Arial, sans-serif" font-size="12" fill="#64748b">
+    Particle size evaluation by dynamic light scattering
+  </text>
+  
+  <rect x="750" y="1500" width="30" height="30" rx="5" fill="#F0FDFA" stroke="#14b8a6" stroke-width="2"/>
+  <text x="800" y="1520" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">
+    Exp 8-9: AGE Series
+  </text>
+  <text x="800" y="1538" font-family="Arial, sans-serif" font-size="12" fill="#64748b">
+    Aggregate evaluation by agarose gel
+  </text>
+  
+  <rect x="750" y="1560" width="30" height="30" rx="5" fill="#EEF2FF" stroke="#6366f1" stroke-width="2"/>
+  <text x="800" y="1580" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1e293b">
+    Exp 10-13: PAGE Detailed Analysis
+  </text>
+  <text x="800" y="1598" font-family="Arial, sans-serif" font-size="12" fill="#64748b">
+    Verification of cleavage reaction by Output
+  </text>
+  
+  <rect x="200" y="1630" width="1000" height="40" rx="5" fill="#f1f5f9"/>
+  <text x="700" y="1655" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#334155">
+    Flow: Circuit validation (1-2) - Gel formation (3) - Molecular analysis (4) - Parallel evaluation (5-7 DLS, 8-9 AGE, 10 PAGE) - Detailed verification (11-13)
+  </text>
+</svg>
