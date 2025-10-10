@@ -68,6 +68,12 @@ img {
     align-items: flex-start;
     width: 100%;
 }
+.split-three {
+    display: flex;
+    gap: 2px;
+    align-items: flex-end;
+    width: 100%;
+}
 
 .sample-group {
     flex: 1;
