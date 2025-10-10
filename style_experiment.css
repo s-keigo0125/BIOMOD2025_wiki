@@ -118,6 +118,7 @@ img {
 .table-block .table-title {
     margin-bottom: 4px; /* タイトルと画像の間隔（必要に応じて調整） */
     line-height: 1.1;
+    text-align: center; /* キャプションは中央揃え */
 }
 .table-block .img-item {
     margin: 0 auto;

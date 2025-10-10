@@ -157,9 +157,10 @@ nav {
     line-height: 1.3em;
     font-size: 1.2em;
     font-weight: normal; /* 太字を解除 */
+    text-align: justify; /* 両端揃え */
 }
 .content h3.sub {
-    font-size: 1.4em; /* 文字を大きく */
+    font-size: 1.3em; /* 文字を大きく */
     font-weight: bold; /* subクラスは太字 */
     margin-top: 20px;
     margin-bottom: 4px;
@@ -170,7 +171,7 @@ nav {
 }
 
 .fig-caption {
-    text-align: center;
+    text-align: center!important; /* キャプションは中央揃え */
     font-size: 0.9em;
     margin-top: 0px;
 }
