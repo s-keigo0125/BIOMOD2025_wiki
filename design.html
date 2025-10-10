@@ -47,8 +47,7 @@
         <section>
         <h2>DNA Aptamer</h2>
         <h2>いったんめんどいから修正後回しにしてます</h2>
-        <img src="image/aptamer.png" alt="Aptamer mechanism diagram" style="max-width: 38%; height: auto; display: block; margin: 16px auto;">
-        <h3>もっと見るだけで理解できるようなアプタマーの図を入れる(ないしはgif)</h3>
+        <img src="image/Aptamer.gif" alt="Aptamer mechanism diagram" style="max-width:65%; height: auto; display: block; margin: 16px auto;">
         <h3>
         アプタマーは、特定の分子のみに強く結合する短いDNAまたはRNA配列である。さらに、アプタマーの配列を変更することで、標的となる細菌も変更できる。この実験では、アプタマーが標的細菌に反応し、新たなDNA配列を露出させるという役割を持つ。
         具体的には、アプタマーはハイドロゲルに固定され、他の分子とは反応せず、標的の細菌が接近するのを待っています。そして、標的細菌がアプタマーに接近するとアプタマーは標的細菌にくっつき、構造が変化します。これによって、アプタマーは自身の折りたたまれた立体構造を解き、それまで内部に隠されていた新たなDNA配列が露出します。この露出した配列は、次のエントロピー駆動回路の触媒として機能します。
@@ -68,18 +67,18 @@
 
         <section>
         <h2>DNA Hydrogel</h2>
-        <h2>右側はGIFにしたい</h2>
         <div class="image-row">
             <div class="image-col left">
                 <img src="image/dna_hydrogel_motif.png" alt="DNA hydrogel four-arm motif schematic" style="width: 90%; height: 80%;">
             </div>
             <div class="image-col right">
-                <img src="image/結合.png" alt="Schematic of DNA hydrogel four-arm motif assembly" style="width: 90%; height: 80%;">
+                <img src="image/gel_motif.gif" alt="Schematic of DNA hydrogel four-arm motif assembly" style="width: 90%; height: 80%;">
             </div>
         </div>
         <h3>
         本プロジェクトでは、数あるDNAハイドロゲルのモチーフの中で、Fig.xのような4分岐モチーフを採用した。各モチーフは4本のアーム(上下左右)を持ち、各アームの末端にはスティッキーエンドが配置されている。
         スティッキーエンドは2種類の長さで設計されており、長いスティッキーエンドをドメインA(図中赤色、14塩基)、短いスティッキーエンドをドメインB(図中緑色、8塩基)と定義する。モチーフの上下のアームにはドメインA、左右のアームにはドメインBが配置されている。上下のドメインAは左右のドメインBと相補的な配列を持つため、隣り合うモチーフ同士が順次結合し、三次元的なネットワーク構造を形成する。
+        </h3><br>
 
         <h3>・配列設計</h3>
         <h3>
@@ -131,20 +130,20 @@
         <table class="sequence-table">
             <thead>
                 <tr>
-                    <th>No.</th>
+                    <th>Name</th>
                     <th>Sequence (5'→3')</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>1</td><td>AAGTTTTGACCTTAGGGTTCCCCTTACGCATCTTCGCGGGTAGCTAAATTAAGATTGCTAGCGAGGCCGACGAAGGTGTAGG</td></tr>
-                <tr><td>2</td><td>GGCCTCGCTAGCAATCTTAATTTAGCTACCCGCGACATCAAGCCACGGCGCTGAGAAAGATGGAACAACCTACACC</td></tr>
-                <tr><td>3</td><td>TTGTTCCATCTTTCTCAGCGCCGTGGCTTGATGTCCTGATCTCTTTAAACGGAAGCTTTGACGAAACGGACGAAGGTGTAGG</td></tr>
-                <tr><td>4</td><td>CGTTTCGTCAAAGCTTCCGTTTAAAGAGATCAGGAAGATGCGTAAGGGGAACCCTAAGGTCAAAACTTCCTACACC</td></tr>
+                <tr><td>Strand1</td><td>AAGTTTTGACCTTAGGGTTCCCCTTACGCATCTTCGCGGGTAGCTAAATTAAGATTGCTAGCGAGGCCGACGAAGGTGTAGG</td></tr>
+                <tr><td>Strand2</td><td>GGCCTCGCTAGCAATCTTAATTTAGCTACCCGCGACATCAAGCCACGGCGCTGAGAAAGATGGAACAACCTACACC</td></tr>
+                <tr><td>Strand3</td><td>TTGTTCCATCTTTCTCAGCGCCGTGGCTTGATGTCCTGATCTCTTTAAACGGAAGCTTTGACGAAACGGACGAAGGTGTAGG</td></tr>
+                <tr><td>Strand4</td><td>CGTTTCGTCAAAGCTTCCGTTTAAAGAGATCAGGAAGATGCGTAAGGGGAACCCTAAGGTCAAAACTTCCTACACC</td></tr>
             </tbody>
         </table>
         <br>
 
-        <h3>・Entropy driven amplification circuit</h3>
+        <h3>・Entropy Driven Amplification Circuit</h3>
         <table class="sequence-table">
             <thead>
                 <tr>
