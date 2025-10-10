@@ -35,8 +35,6 @@
     <div class="container">
         <main class="main">
         <section>
-        <h1>実験の順番とかつなげ方は寝ぼけてない頭で考えます</h1>
-        <h1>ついでに、そのタイミングでサイドバーも反映します</h1>
         <h2>Overview</h2>
         <h3>
         実証のために実験を行ったみたいな文章を適当に入れる フローチャートみたいなもの
@@ -615,11 +613,38 @@
         <h3>
         次の実験ではアーム領域を持たないsticky end配列のみからなるDNA鎖を用いて、output鎖との結合が実際に起こるかどうかを検証する。これにより、sticky end配列自体の機能性とoutput鎖による置換反応の可能性を単独で評価できる。<a href="#Experiment13">実験13</a>
         </h3>
-        <h3>次にやることについては検討中</h3>
         </section>
         <br>
 
-
+        <section id="experiment13">  <!--PAGEスティッキーエンド解離4th time-->
+        <h2>Experiment 13 Output-Induced Displacement Analysis by PAGE(4th)</h2>
+        <h3 class="sub">Objective</h3>
+        <h3>
+        前回の実験結果を踏まえ、sticky end配列のみからなるDNA鎖を用いて、output鎖との結合が実際に起こるかどうかを検証する。
+        </h3>
+        <h3 class="sub">Method</h3>
+        <h3>
+        本実験では、結果のFig. 13aに示すように11種類のサンプルを各5.0 μL調製した。各サンプルには、短いsticky end鎖、長いsticky end鎖、output 鎖、および fuel 鎖を必要に応じて添加し、MgCl₂ 12.5 mM、Tris 10 mM、EDTA 1.0 mM を含むバッファー中で混合した。
+        各sticky end鎖とoutput、fuel 鎖はいずれも最終濃度が 0.25 μMになるように調製した。詳細な調製の手順は実験10から12までと同様である。
+        10%ポリアクリルアミドゲル（TEMED 0.1%、APS 0.1%）を作成し、調製したサンプルをゲルにロードし、100 Vの定電圧下で50分間泳動を行った。泳動後、ゲルをSYBR Goldで染色し、UV照射下でバンドの移動度を観察した。
+        </h3>
+        <h3 class="sub">Result</h3>
+        <div class="figure-block">
+            <figure class="img-item">
+                <img src="image/PAGE_Result_Expt13.png" alt="PAGE Result 4th time" class="middle-image">
+            </figure>
+        <h3 class="figure-title">Figure 13a. PAGE Result</h3>
+        </div>
+        <h3>
+        Outputを加えたレーン内で比較してみると、Outputだけを加えているLane3よりも上の位置にある、Outputとsticky end鎖との結合を示すバンドは確認されなかった。
+        これは、sticky end鎖とoutput鎖との間で相補的な結合が形成されていないことを示唆している。
+        また、sticky end鎖同士を混合したレーン5では、両鎖間で結合が形成されていることを示すバンドが観察されなかった。
+        これは、sticky end鎖同士の結合が熱力学的に不安定であり、室温での反応条件下では結合が形成されないことを示唆していると同時に、実験10から12までで観察されたモチーフDNA間の結合は、sticky end間の結合ではなく、アーム領域間の相補鎖形成によるものである可能性がさらに支持された。
+        </h3>
+        <h3 class="sub">Next Step</h3>
+        <h3>
+        今回の実験結果を踏まえて、室温での反応ではなく、冷やしながら反応を行うことで、sticky end鎖同士の結合が形成されるかどうかを検証する。
+        </h3>
 
         </main>
 
