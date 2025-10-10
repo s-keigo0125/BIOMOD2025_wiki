@@ -23,7 +23,7 @@
 }
 .container h2 {
     font-weight: bold; /* デフォルトのh2は太字 */
-    font-size: 2em; /* 文字を大きく */
+    font-size: 1.8em; /* 文字を大きく */
     text-align: left;
     margin-top: 30px;
     margin-bottom: 10px;
