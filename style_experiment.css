@@ -68,7 +68,7 @@ img {
 .split-in-half {
     display: flex;
     gap: 8px;
-    align-items: flex-start;
+    align-items: flex-end;
     width: 100%;
 }
 .split-three {

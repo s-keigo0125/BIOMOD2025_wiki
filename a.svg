@@ -98,7 +98,7 @@
     Exp 9: AGE Output Analysis
   </text>
   <text x="400" y="708" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">
-    Fixed concentration test - Band decrease at high Output
+    Fixed concentration test - <tspan fill="#dc2626" font-weight="bold">No significant decrease observed</tspan>
   </text>
   
   <rect x="830" y="570" width="340" height="65" rx="8" fill="#FFF7ED" stroke="#f97316" stroke-width="2"/>
