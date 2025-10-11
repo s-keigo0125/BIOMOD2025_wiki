@@ -38,7 +38,7 @@
     <div class="content">
         <section>
         <h2>Overview of the design</h2>
-        <img src="image/overall_design.png" alt="Overall design diagram" style="max-width: 38%; height: auto; display: block; margin: 16px auto;">
+        <img src="image/overview_design.png" alt="Overall design diagram" style="max-width: 38%; height: auto; display: block; margin: 16px auto;">
         <h3 class="fig-caption">Fig.1 Overall Design Diagram</h3>
         <br>
         <h3>
@@ -108,6 +108,7 @@
         <h3 class="sub">・Dissolution Mechanism</h3>
         <img src="image/bond_break.gif" alt="Dissolution mechanism of the DNA hydrogel network by the Output strand from the entropy-driven circuit" style="max-width: 100%; height: auto; display: block; margin: 16px auto;">
         <h3 class="fig-caption">Fig.7 Dissolution Mechanism</h3>
+        <br>
         <h3>
         Since the TB array is present in Output, the strand replacement reaction uses domain T' of strands 1 and 3 as a toehold. This replaces the motif-to-motif bonds with motif-to-Output bonds, causing the hydrogel to dissolve entirely, as shown in Fig. 7.
         </h3><br>
@@ -174,29 +175,30 @@
         <h3>・Motif binding</h3>
         <div class="image-row-center">
             <div class="image-col left">
-                <img src="image/nupack1.png" alt="NUPACK simulation result 1" style="width: 90%; height: 80%;">
-                <h3 class="fig-caption">Fig.8 NUPACK Simulation Result 1</h3>
+                <img src="image/nupack1.png" alt="NUPACK Analysis result 1" style="width: 90%; height: 80%;">
+                <h3 class="fig-caption">Fig.8 NUPACK Analysis Result 1</h3>
             </div>
             <div class="image-col right">
-                <img src="image/nupack2.png" alt="NUPACK simulation result 2" style="width: 90%; height: 80%;">
-                <h3 class="fig-caption">Fig.9 NUPACK Simulation Result 2</h3>
+                <img src="image/nupack2.png" alt="NUPACK Analysis result 2" style="width: 90%; height: 80%;">
+                <h3 class="fig-caption">Fig.9 NUPACK Analysis Result 2</h3>
             </div>
         </div>
+        <h3>According to reference [2], a hydrogel was formed with a motif consisting of 34-base arms and 8-base sticky ends when each strand was present at 50 μM. Accordingly, in our NUPACK analysis, the concentration of each DNA strand was set to 50 μM. When the four designed strands are mixed, only the four-arm motif is formed.</h3>
         <br>
 
         <h3>・Two sticky ends binding</h3>
         <div class="image-row-center">
             <div class="image-col left">
-                <img src="image/nupack1.png" alt="NUPACK simulation result 1" style="width: 90%; height: 80%;">
-                <h3 class="fig-caption">Fig.10 NUPACK Simulation Result 3</h3>
+                <img src="image/nupack3.png" alt="NUPACK Analysis result 3" style="width: 90%; height: 80%;">
+                <h3 class="fig-caption">Fig.10 NUPACK Analysis Result 3</h3>
             </div>
             <div class="image-col right">
-                <img src="image/nupack2.png" alt="NUPACK simulation result 2" style="width: 90%; height: 80%;">
-                <h3 class="fig-caption">Fig.11 NUPACK Simulation Result 4</h3>
+                <img src="image/nupack4.png" alt="NUPACK Analysis result 4" style="width: 90%; height: 80%;">
+                <h3 class="fig-caption">Fig.11 NUPACK Analysis Result 4</h3>
             </div>
         </div>
         <h3>
-        When the sticky ends (strand1: 14nt, strand2: 8nt, each at 50 μM) are mixed, they hybridize with each other.
+        When the two sticky ends (strand1: 14nt, strand2: 8nt, each at 50 μM) are mixed, they hybridize with each other.
         Furthermore, comparing the binding energies of the sticky ends between our designed motif and the motif from the referenced paper [2], our design exhibits a lower binding energy, suggesting that our motifs bind more strongly with each other than the reference.
         </h3>
         <br>
@@ -204,17 +206,18 @@
         <h3>・Sticky end and Output binding</h3>
         <div class="image-row-center">
             <div class="image-col left">
-                <img src="image/nupack5.png" alt="NUPACK simulation result 5" style="width: 90%; height: 80%;">
-                <h3 class="fig-caption">Fig.12 NUPACK Simulation Result 5</h3>
+                <img src="image/nupack5.png" alt="NUPACK Analysis result 5" style="width: 90%; height: 80%;">
+                <h3 class="fig-caption">Fig.12 NUPACK Analysis Result 5</h3>
             </div>
             <div class="image-col right">
-                <img src="image/nupack6.png" alt="NUPACK simulation result 6" style="width: 90%; height: 80%;">
-                <h3 class="fig-caption">Fig.13 NUPACK Simulation Result 6</h3>
+                <img src="image/nupack6.png" alt="NUPACK Analysis result 6" style="width: 90%; height: 80%;">
+                <h3 class="fig-caption">Fig.13 NUPACK Analysis Result 6</h3>
             </div>
         </div>
         <h3>
         When the two sticky ends (strand1: 14nt, strand2: 8nt) and Output (each at 50 μM) are mixed, strand1 hybridizes with the Output. This indicates that the Output can displace strand1 from strand2.
         </h3>
+        <br>
         <br>
         </section>
 
