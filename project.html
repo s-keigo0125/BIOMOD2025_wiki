@@ -46,7 +46,7 @@
         <h3>
         One of the immune cells that exhibits highly autonomous functions within the body is the macrophage. Macrophages are responsible for the “phagocytic process,” in which they autonomously recognize and engulf pathogens or foreign substances. When detecting target bacteria or foreign materials, macrophages enclose them with their cell membrane, internalize them, and subsequently degrade and neutralize them inside the cell.
         This sequence of processes constitutes a highly sophisticated biological system composed of multiple steps: (1) specific recognition, (2) signal transduction, and (3) active uptake.<br>
-        To artificially reproduce such advanced autonomous functions, DNA has attracted attention as an excellent material. DNA, a molecule that encodes genetic information through combinations of four bases (A, T, G, and C) in its double-helical structure, can be utilized beyond information storage by leveraging its specific base-pairing and self-assembly properties. These characteristics enable the artificial construction of diverse nanostructures and functional materials.
+        To artificially reproduce such advanced autonomous functions, DNA has attracted attention as an useful material. DNA,  a molecule that is used for encoding genetic information in cells, can be utilized beyond information storage by leveraging its specific base-pairing and self-assembly properties. These characteristics enable the artificial construction of diverse nanostructures and functional materials.
         One example of this is the DNA hydrogel. DNA hydrogels have promising applications in fields such as sensing and drug delivery. By integrating the diverse functions realized through DNA sequence design technologies, it may be possible to construct highly autonomous systems analogous to macrophages.
         </h3>
         <br>
@@ -55,7 +55,10 @@
         現状、人工材料で生体のような動的な機能を統合したシステムを実装した例は少なく、依然として大きな課題です。特に、DNAハイドロゲルは優れた生体適合性とプログラム可能性を持つにもかかわらず、標的を検出して自律的に応答する機能性材料としてはまだあまり研究されていません。
         </h3>
         <h3>
-        At present, there are few examples of artificial materials that integrate dynamic, life-like functions into a unified system, and this remains a significant challenge. In particular, although DNA hydrogels possess excellent biocompatibility and programmability, they have not yet been extensively studied as functional materials capable of autonomously responding to target detection.
+        While DNA hydrogels offer excellent biocompatibility and programmability, 
+        their integration with advanced technologies such as DNA computing has 
+        been challenging due to the significant gap in operating concentrations 
+        between these systems.
         </h3>
         <br>
         <h3 class="sub">・Goal</h3>
@@ -78,10 +81,10 @@
         このような機能分解により、貪食作用を「認識→伝達→取り込み」という3つの独立したモジュールの連結として定義し、それぞれの機能をDNA分子の相互作用として実装可能な形に構成した。
         </h3>
         <h3>
-        To reconstruct the phagocytic process of macrophages as a DNA molecular system, we first deconstructed the macrophage mechanism into three abstract functional modules and reinterpreted each in a form that could be implemented using DNA molecules.
-        First, we conceptualized the <strong>recognition</strong> function as an information conversion process that generates specific molecular signals upon interaction with a target. This was simplified into an input-output relationship of “binding → signal generation.”
-        Second, we interpreted the <strong>signal transduction</strong> function as the process by which macrophages convert weak recognition signals into responses. We reinterpreted this as a chemical amplification reaction that “produces many product molecules from a single trigger molecule,” thereby condensing the complex signaling network into a single functional aspect—signal amplification.
-        Third, we viewed the <strong>uptake</strong> function as a process in which the material structure is locally degraded in response to the amplified signal. The active process of macrophages engulfing targets was replaced with a passive process where the material dissolves and space is created in response to the amplified signal.
+        To reconstruct the phagocytic process of macrophages as a DNA molecular system, we first reconsidered the macrophage mechanism into three abstract functional modules and reinterpreted each in a form that could be implemented using DNA molecules.
+        First, we achieved <strong>recognition</strong> by exposing specific sequences as a result of reaction with the target.
+        Second, we achieved <strong>signal transduction</strong> by converting recognized signals through chemical amplification that produces many product molecules from trigger molecules.
+        Third, we achieved <strong>uptake</strong> by locally degrading the material structure in response to the amplified signal, thereby recreating the engulfing behavior through structural dissolution.
         <br>
         Through this functional decomposition, we defined the phagocytic process as a sequence of three independent modules: “recognition → signal transduction → uptake,” each implemented as interactions between DNA molecules.
         </h3>
@@ -95,7 +98,7 @@
         <h3>1.標的を認識し、情報変換するモジュール <br>
         これには、標的細菌表面の分子に特異的に結合するDNAアプタマーを用いる。アプタマーは標的との結合により構造変化を起こし、1本鎖DNAを露出させる。この露出した1本鎖DNAが次段階へのトリガーシグナルとして機能する。
         </h3>
-        <h3>2.シグナルを増幅し、伝達するモジュール<br>
+        <h3>2.シグナルを変換・増幅するモジュール<br>
         これには、エントロピー駆動回路を用いる。この回路は、基質と呼ばれる三種類の1本鎖DNAからなる複合体と、燃料と呼ばれる1本鎖DNAを含む溶液で構成される。アプタマーから放出された触媒DNAが添加されると、反応サイクルが開始し、アウトプットと呼ばれる1本鎖DNAが大量に生成される。
         </h3>
         <h3>3.自身を溶解して空間を形成し、標的を取り込むモジュール<br>
@@ -107,10 +110,11 @@
         We implement the three functional modules, which we abstracted in the Ideas section, as concrete DNA systems: DNA aptamers, entropy-driven circuits, and DNA hydrogels.
         </h3>
         <h3>1. Module for recognizing targets and converting information<br>
-        This module employs DNA aptamers that specifically bind to molecules on the surface of target bacteria. Upon binding to the target, the aptamer undergoes a conformational change, exposing a single-stranded DNA. This exposed single-stranded DNA serves as a trigger signal for the next stage.
+        This module employs DNA aptamers that specifically bind to molecules on the surface of target bacteria. Upon binding to the target, the aptamer undergoes a conformational change, exposing a single-stranded DNA. 
         </h3>
-        <h3>2. Module for amplifying and transmitting signals<br>
-        This module utilizes an entropy-driven circuit. The circuit consists of a solution containing a complex of three types of single-stranded DNA, known as substrates, and a single-stranded DNA referred to as fuel. When the catalyst DNA released from the aptamer is added, the reaction cycle initiates, producing a large amount of single-stranded DNA called output.
+        <h3>2. Module for amplifying and converting signals<br>
+        This module utilizes an entropy-driven circuit, which is driven by the catalyst sequences exposed through target recognition in Module 1. The circuit consists of a solution containing three DNA components, substrate, fuel, and catalyst.
+        The substrate reacts with the catalyst to release output DNA while consuming the fuel but leaving the catalyst. When the catalyst DNA released from the aptamer is added, the reaction cycle initiates, producing a large amount of single-stranded DNA called output.
         </h3>
         <h3>3. Module for self-dissolution to create space and engulf targets<br>
         The uptake module employs a DNA hydrogel composed of four-branched DNA motifs as its network components. This hydrogel binds adjacent motifs through two types of sticky ends of different lengths. The sticky end sequences are designed to specifically bind to the output DNA released from the entropy-driven circuit.
