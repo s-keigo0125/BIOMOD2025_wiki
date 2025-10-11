@@ -88,16 +88,14 @@
             </div>
         </div>
         <h3>
-        本プロジェクトでは、Fig.4に示す4分岐DNAハイドロゲルモチーフを採用した。各モチーフは上下左右の4本のアームを持ち、末端にスティッキーエンドを配置している。DNA配列はKandatsuら[2]を参考に設計し、低濃度でのゲル化を実現するためアーム長を34塩基とした。
-        スティッキーエンドは、長いドメインA（14塩基、赤）と短いドメインB（8塩基、緑）の2種類で構成され、ドメインAは上下に、ドメインBは左右に配置されている。両ドメインは相補的であり、モチーフ同士が順次結合して三次元ネットワークを形成する。なお、ドメインBを長く設計したのは、Output DNAが結合する際のトーホールドを提供するためである。
-        この突出した6塩基の領域がトーホールドとして機能し、Output DNAの結合開始点となる。
+        本プロジェクトでは、Fig.4に示す4分岐DNAハイドロゲルモチーフを採用した。このモチーフはKandatsuら[2]を参考に設計し、4種類のDNA(strand 1, 2, 3, 4)から構成される。各モチーフは上下左右の4本のアームを持ち、低濃度でのゲル化を実現するためアーム長を34塩基とした。末端にはスティッキーエンドを配置しており、その配列はOutputが持つドメインBTに基づいて設計した。ドメインBは8塩基、トーホールドTは6塩基である。
         具体的な配列は<a href="#appendix">Appendix</a>に記載しています。
         </h3><br>
 
         <h3>
-        In this project, we adopted a four-armed DNA hydrogel motif as shown in Fig. 4. Each motif consists of four arms (top, bottom, left, and right), with sticky ends located at their termini. The DNA sequences were designed based on the study by Kandatsu et al. [2], with the arm length set to 34 nucleotides to enable gelation at low concentrations.
-        The sticky ends consist of two types: a longer domain A (14 nt, shown in red) and a shorter domain B (8 nt, shown in green). Domains A are positioned on the top and bottom arms, while domains B are placed on the left and right arms. Because the two domains are complementary, neighboring motifs hybridize sequentially to form a three-dimensional network structure. Domain B was designed to be longer to provide a toehold for the binding of the Output DNA.
-        This 6-nucleotide overhang functions as a toehold and serves as the initiation site for Output DNA binding.
+        In this project, we used a four-way branched DNA hydrogel motif, as shown in Fig. 4. Designed based on Kandatsu et al. [2], this motif consists of four types of DNA strands (strand 1, 2, 3 and 4). 
+        Each motif has four arms that extend upwards, downwards, to the left and to the right. The arms are 34 bases long to achieve gelation at low concentrations. The sticky ends are positioned at the terminals and their sequences are based on the BT domain possessed by the output. Domain B comprises 8 bases and toehold T comprises 6 bases.
+        Strand 1 and 3 have B'T' at the 5' end, while Strand 2 and 4 have B.
         The detailed sequences are provided in the <a href="#appendix">Appendix</a>.
         </h3><br>
 
@@ -105,20 +103,20 @@
         <img src="image/assembling.png" alt="DNA hydrogel network formed by four-way junction motifs with sticky end connections" style="max-width: 38%; height: auto; display: block; margin: 16px auto;">
         <h3 class="fig-caption">Fig.6 DNA Hydrogel Network</h3>
         <h3>
-        Fig.5に示すように隣り合うモチーフはスティッキーエンドを介して結合し、大きなネットワーク構造を形成する。Fig.6に示すように、あるモチーフのドメインAと隣接モチーフのドメインBが相補的結合を形成している。この時、ドメインAよりも長いドメインBの一部(トーホールド領域)は1本鎖で露出したまま、ゲルネットワークを形成する。
+        Fig.5およびFig.6に示すように隣り合うモチーフはStrand 1, 3が持つB'とStrand 2, 4が持つBが結合することでネットワークを形成する。
         </h3><br>
         <h3>
-        As shown in Fig. 5, adjacent motifs are connected via their sticky ends to form a large network structure. As illustrated in Fig. 6, domain A of one motif hybridizes with domain B of a neighboring motif through complementary base pairing. In this configuration, a portion of domain B, which is longer than domain A (the toehold region), remains as a single-stranded overhang within the gel network.
+        As shown in Fig. 5 and Fig. 6, adjacent motifs form a network by connecting B' ,held by Strand 1 and Strand 3 ,with B held by Strand 2 and Strand 4.
         </h3><br>
 
         <h3 class="sub">・Dissolution Mechanism</h3>
         <img src="image/bond_break.gif" alt="Dissolution mechanism of the DNA hydrogel network by the Output strand from the entropy-driven circuit" style="max-width: 100%; height: auto; display: block; margin: 16px auto;">
         <h3 class="fig-caption">Fig.7 Dissolution Mechanism</h3>
         <h3>
-        Fig.7のようにドメインBのトーホールド領域に、エントロピー駆動回路から生成されたOutput DNAが結合する。Output DNAはトーホールドを足掛かりとして鎖置換反応を開始し、ドメインAを押し出す。この置換反応はOutput DNAとドメインBの相補的な結合の方が、ドメインAとドメインBの部分的な結合よりも熱力学的に安定であるために進行する。この微視的な結合破壊が無数に起こることで、ハイドロゲルは溶解する。
+        OutputはTBの配列を持つため，Fig.7のようにStrand 1,3のドメインT'をトーホールドとした鎖置換反応により，モチーフ間の結合がモチーフとOutputの結合に置き換えられ、全体としてハイドロゲルは溶解する。
         </h3><br>
         <h3>
-        As shown in Fig. 7, the Output DNA generated from the entropy-driven circuit binds to the toehold region of domain B. The Output DNA initiates a strand displacement reaction by hybridizing to the toehold and subsequently displaces domain A. This reaction proceeds because the hybridization between the Output DNA and domain B is thermodynamically more stable than the partial hybridization between domains A and B. The accumulation of these microscopic strand displacement events ultimately leads to the dissolution of the hydrogel.
+        Since the TB array is present in Output, the strand replacement reaction uses domain T' of strands 1 and 3 as a toehold. This replaces the motif-to-motif bonds with motif-to-Output bonds, causing the hydrogel to dissolve entirely, as shown in Fig. 7.
         </h3><br>
         </section>
         
