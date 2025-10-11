@@ -37,10 +37,11 @@
         <section>
         <h2>Overview</h2>
         <h3>
-        本研究では、まずエントロピー駆動回路とDNAハイドロゲルの組み合わせが機能するかを検証することに焦点を絞った。具体的には、アプタマーによる標的細菌認識モジュールは統合せず、エントロピー駆動回路から生成されるOutput DNAを直接ハイドロゲル溶液に添加することで、回路の出力がハイドロゲル溶解を引き起こすかを実験的に検証した。
+        In this study, we focused on testing whether the entropy-driven circuit could function in combination with a DNA hydrogel. Specifically, we did not integrate the aptamer-based bacterial recognition module; instead, we directly added the output DNA produced by the circuit to the hydrogel solution to experimentally determine whether it could induce hydrogel dissolution.        
         </h3>
+        <br>
         <h3>
-        In this study, we focused on testing whether the entropy-driven circuit could function in combination with a DNA hydrogel. Specifically, we did not integrate the aptamer-based bacterial recognition module; instead, we directly added the output DNA produced by the circuit to the hydrogel solution to experimentally determine whether it could induce hydrogel dissolution.
+        The experimental procedure followed the flow diagram shown below.
         </h3>
         <div class="figure-block">
                 <figure class="img-item">
@@ -217,9 +218,11 @@
         </h3>
         <h3 class="sub">Method</h3>
         <h3>
-        今回の電気泳動では、4種類のDNA鎖（strand 1, 2, 3, 4）が、どの組み合わせで二本鎖や高次構造を形成するかを確認するため、結果のFig.3aに示すような全16パターンの溶液を調製し、比較のために20 bp DNA Ladderを用意した。それぞれの溶液において各DNA鎖の濃度は200 nM、塩濃度はNa+が 50 mMである。
-        そして、ポリアクリルアミド10%ゲル（TEMED 0.1%, APS 0.1%）を作成し、作成したゲルのウェルに溶液を注入し、100 Vの定電圧で1時間電気泳動を実施した。
-        泳動後、ゲルをSYBRGOLDで染色し、UV照射下でバンドの移動度を観察した。
+        In this electrophoretic analysis, we investigated which combinations of four DNA strands (designated as strand 1, 2, 3, and 4) would form duplexes or higher-order structures. For this purpose, a total of 16 sample solutions, representing all possible combinations, were prepared as shown in the results (Fig. 3a). A 20 bp DNA Ladder was used as a size reference. In each solution, the concentration of each DNA strand was 200 nM, and the sodium ion (Na⁺) concentration was 50 mM.
+        </h3>
+        <br>
+        <h3>
+        A 10% polyacrylamide gel, polymerized with 0.1% TEMED and 0.1% APS, was prepared. The sample solutions were loaded into the wells of the gel, and electrophoresis was conducted at a constant voltage of 100 V for 1 hour. Following electrophoresis, the gel was stained with SYBR Gold, and the mobility of the bands was observed under UV illumination.
         </h3>
         <div class="figure-block">
             <figure class="img-item">
@@ -236,19 +239,17 @@
             <h3 class="figure-title">Figure 4b. PAGE Result</h3>
         </div>
         <h3>
-        全種類（Strand 1, 2, 3, 4）を混ぜた溶液では、比較のために用いた20 bp DNA Ladderの最大サイズ（300 bp）よりも著しく移動度が遅い位置にバンドが確認され、複数のモチーフからなる高次集合体が形成されていることが示唆された。
-        また、2種類混ぜた溶液では1と3、2と4の組み合わせでは1種類だけの時と同じ位置にバンドができているが、それ以外の相補的な配列を持つ組み合わせでは1種類だけの時よりも上にもバンドができていることが確認された。
-        これらの結果から、設計したDNA配列は意図したとおりに結合していることが確認された。
-        一方で、全種類のDNAを混ぜた溶液の蛍光バンドは、ゲル上部のウェル付近に集中的に固まっており、ポリアクリルアミドゲル（PAGE）の分離限界を超えていることが確認された。
-        これは、形成された集合体のサイズがPAGEで分離可能な分子量の範囲を超えていることを意味する。
-        <ul>
+        As illustrated in Fig.4b, in the solution containing all four strands (Strand 1, 2, 3, and 4), a band was observed at a position with significantly lower electrophoretic mobility than the largest fragment (300 bp) of the 20 bp DNA Ladder used for reference. This suggests that a higher-order assembly, composed of multiple motifs, was formed.
+        Furthermore, in the solutions containing two different strands, the combinations of non-complementary pairs (1 and 3; 2 and 4) exhibited bands at the same positions as their single-strand counterparts. In contrast, the combinations with complementary sequences produced an additional band at a higher position (i.e., lower mobility) than the single-strand bands. These results confirm that the designed DNA sequences hybridized as intended.
+        <br><br>
+        However, the fluorescent band from the four-strand mixture was concentrated near the loading wells at the top of the gel, indicating that its size exceeded the separation limit of polyacrylamide gel electrophoresis (PAGE). This implies that the molecular weight of the formed assembly was beyond the resolution range of the PAGE system.
         </h3>
         <h3 class="sub">Next Step</h3>
         <h3>
-        集合体のサイズをより詳細に解析するため、以下の2つの定量的・スケール調整アプローチが必要であると判断した。
+        To conduct a more detailed analysis of the assembly size, we determined that the following two approaches, focusing on quantitative measurement and appropriate scaling, are necessary:
         <ul>
-            <li>1: アガロースゲル電気泳動の実施。(<a href="#experiment8">実験8</a>)より大きな分子量の分離に適したアガロースゲル電気泳動を用い、集合体のサイズをより適切なスケールで定性的に比較・解析する。</li>
-            <li>2: 動的光散乱（DLS）測定の実施。(<a href="#experiment5">実験5</a>)電気泳動は分子の移動度に基づく定性的な分析に留まるため、溶液中での実際の分子サイズ分布を定量的に評価するため、動的光散乱法（DLS）による測定を並行して実施する。</li>
+            <li>1: Agarose Gel Electrophoresis(<a href="#experiment8">Experiment 8</a>) :Agarose gel electrophoresis, which is suitable for the separation of molecules with higher molecular weights, will be employed. This will allow for a qualitative comparison and analysis of the assembly size on a more appropriate scale than PAGE.</li>
+            <li>2: Dynamic Light Scattering (DLS) Measurement(<a href="#experiment5">Experiment5</a>) :Since electrophoresis is limited to a qualitative analysis based on molecular mobility, Dynamic Light Scattering (DLS) measurements will be conducted in parallel. This will enable the quantitative evaluation of the actual molecular size distribution of the assemblies in solution.</li>
         </ul>
         </section>
 
@@ -256,13 +257,13 @@
         <h2>Experiment 5 : Buffer Optimization by DLS (Dynamic Light Scattering)</h2>
         <h3 class="sub">Objective</h3>
         <h3>
-        バッファーの塩濃度を変更して、ゲルの形成に適切なバッファーの塩濃度を決定すること。
+        To determine the optimal salt concentration in the buffer required for proper gel formation by varying its concentration.
         </h3>
 
         <h3 class="sub">Method</h3>
-        <h3>我々は以下の条件でバッファーの塩濃度が異なる10種類のサンプルを各20 μL調製した。
-        サンプルを調製した後、95℃(5分)、その後1分ごとに-1℃で4℃まで温度を下げるアニーリングを行い、それぞれのサンプルごとにDLSを用いて粒子の大きさの分布を測定した。
-        DLSの測定には、Malvern Panalytical社のZetasizer Ultra Red Label (model number :ZSU3305)を使用し、測定温度は 25℃、測定時間は auto設定で行った。
+        <h3>
+        Ten types of samples (20 µL each) were prepared with different buffer salt concentrations under the specified conditions. After preparation, the samples were subjected to an annealing process, which involved heating to 95°C for 5 minutes, followed by cooling to 4°C at a rate of -1°C per minute. The particle size distribution of each sample was then measured using Dynamic Light Scattering (DLS).
+        The DLS measurements were performed on a Zetasizer Ultra Red Label (model number: ZSU3305, Malvern Panalytical) at a constant temperature of 25°C. The measurement duration was set to "auto" for each analysis.
         </h3>
         <div class="split-in-half">
             <div class="sample-group">
@@ -303,17 +304,14 @@
                 <h3 class="figure-title">Figure 5c. DLS Buffer Optimization Result</h3>
         </div>
         <h3>
-        グラフの1000 nm から10000 nm の間にピークが確認された。また、NaCl塩のA群では濃度を変化させても、μオーダーのピーク強度は大きな変化は確認できなかった。
-        一方、MgCl₂塩のB群では塩濃度を大きくするとμオーダーのピーク強度は小さくなっていることが確認された。
-        また、全体として金属イオンを変えても、特有のピークの出現位置や全体の傾向に顕著な差異は確認されなかった。
-        以上のことから、数 μ から数十 μ オーダーの構造物が形成されていると予想される。
-        また、結果を踏まえて、本プロジェクトではバッファーの塩をMgCl2にして、濃度は12.5 mMで使用することに決定した。
-        これは、低濃度帯であればピークの出現位置や強度に顕著な差異は確認されず、かつ12.5 mM がエントロピードリブン回路の最適動作条件に相当するためである。
+        As illustrated in the graph, a peak was observed in the range of 1000 nm to 10000 nm. In Group A, which used NaCl salt, no significant changes were observed in the peak intensity on the micrometer scale, even when the concentration was varied. In contrast, in Group B, which used MgCl₂ salt, it was confirmed that the peak intensity on the micrometer scale decreased as the salt concentration increased. Overall, changing the metal ion did not produce any significant differences in the characteristic peak positions or the overall trends.
+        <br><br>
+        From these results, it is presumed that structures on the order of several to tens of micrometers are being formed. Based on this outcome, we have decided to use MgCl₂ as the buffer salt at a concentration of 12.5 mM for this project. This decision is based on the fact that no significant differences in peak position or intensity were observed in the low concentration range, and that 12.5 mM corresponds to the optimal operating conditions for the entropy-driven circuit.
         </h3>
 
         <h3 class="sub">Next Step</h3>
         <h3>
-        この次には、今回の実験では測定できなかった、DNA濃度を変更したときのサイズ分布の評価をDLSを用いて行う。(<a href="#experiment6">実験6</a>)
+        As the next step, the size distribution will be evaluated at various DNA concentrations using DLS, an analysis that was not performed in the current experiment. (<a href="#experiment6">Experiment 6</a>)
         </h3>      
         </section>
 
@@ -321,13 +319,12 @@
         <h2>Experiment 6 : Analysis of DNA Concentration Effects by DLS(Dynamic Light Scattering)</h2>
         <h3 class="sub">Objective</h3>
         <h3>
-        ハイドロゲルモチーフのDNA濃度を変更し、DLSを用いて粒子サイズ分布の評価をすること。
+        To evaluate the particle size distribution of the hydrogel motifs at various DNA concentrations using Dynamic Light Scattering (DLS).
         </h3>
         <h3 class="sub">Method</h3>
         <h3>
-        我々は以下のTable 6aに示すようにDNA濃度が異なる5種類のサンプルを調製した。測定用のサンプルは、基本的に 20 μLとなるように調製したが、200 μMのサンプルのみ15.6 μLで調製した。
-        アニーリング途中でやめたとことかの書き方は検討
-        そして、それぞれのサンプルごとにDLSを用いて粒子の大きさの分布を測定した。DLSの測定には、Malvern Panalytical社のZetasizer Ultra Red Label を使用し、測定温度は 25℃、測定時間は auto設定で行った。
+        We prepared five types of samples with different DNA concentrations, as shown in Table 6a. The samples for measurement were generally prepared to a final volume of 20 µL, with the exception of the 200 µM sample, which was prepared at 15.6 µL.
+        The particle size distribution for each sample was subsequently measured using Dynamic Light Scattering (DLS). These DLS measurements were performed on a Zetasizer Ultra Red Label (Malvern Panalytical) at a temperature of 25°C, with the measurement duration set to "auto."
         </h3>
         <div class="table-block">
             <h3 class="table-title">Table 6a. Sample Recipe</h3>
@@ -343,12 +340,12 @@
                 <h3 class="figure-title">Figure 6a. DLS Result</h3>
         </div>
         <h3>
-        図より、濃度が40 μM以下の低濃度域ではμmオーダーのピークが確認されない、もしくは強度が小さいことが確認されたから、DNA濃度が小さいときにはμMオーダーでの構造物は形成されていないことが予想される。
-        本プロジェクトで設計した配列では数百μM程度の濃度が必要であると考えられる。しかし、高濃度にもかかわらず形成される構造体のサイズは比較的小さく、濃度に見合った十分な高次構造形成が達成できていない。
+        As indicated by the data, in the low concentration range of 40 µM and below, peaks in the micrometer (µm) range were either not observed or exhibited low intensity. This suggests that structures on the micrometer scale do not form when the DNA concentration is low.
+        Therefore, it is considered that a concentration of several hundred micromolars is likely necessary for the sequences designed in this project. However, despite the high concentrations used, the size of the resulting structures is relatively small, indicating that sufficient formation of higher-order structures commensurate with the concentration has not been achieved.
         </h3>
         <h3 class="sub">Next Step</h3>
         <h3>
-        実験結果は設計したモチーフDNA配列の集合効率の低さを示しており、配列設計の段階から見直しが必要と考えられる。
+        The experimental results indicate a low assembly efficiency for the designed DNA motif sequences, suggesting that a re-evaluation starting from the sequence design stage is necessary.
         </h3>
         </section>
 
@@ -356,19 +353,19 @@
         <h2>Experiment 7 : Assessment of Sticky-Ends Dissociation using DLS</h2>
         <h3 class="sub">Objective</h3>
         <h3>
-        エントロピードリブン回路のOutputがゲルモチーフのスティッキーエンド間の結合を切ることができるかどうか確認すること。
+        To determine whether the output from the entropy-driven circuit can disrupt the bonds between the sticky ends of the hydrogel motifs.    
         </h3>
         <h3 class="sub">Method</h3>
         <h3>
-        我々は以下のTable 7aに示すように、2系統で合計6種類のサンプルを調製した。1系統はアニーリングを当日に行ったサンプル(Sample#A)で、もう1系統はアニーリングを2日前に行ったサンプルである。アニーリング条件は95℃(5分)、その後1分ごとに-1℃で4℃まで温度を下げるものである。
-        本実験では、モチーフ配列のみの構造と、これにDNA鎖を添加した後の構造のサイズ変化を比較するため、DLS測定を二段階に分けて実施した。
-        <br>
-        まず、ベース溶液として、ゲルのモチーフ配列4種類（各 80μM）とバッファー(MgCl2 12.5 mM、 Tris 10 mM、 EDTA 1.0mM )からなる溶液を16 μL調製し、この溶液に対して、95℃で5分間加熱後、1分ごとに-1℃の速度で4℃まで冷却するアニーリングを行い、この溶液の初期の分子サイズ分布をDLSで測定した。
-        <br>
-        初期測定後、このベース溶液（16μL）に対し、output鎖またはfuel鎖を含む溶液を 4μL 添加し、全液量が 20μL となるようにした。この希釈により、ゲルのモチーフ配列の最終濃度は各 64 μM、新たに加えたDNA鎖は9.2 μMとなったが、バッファーの濃度は測定前後で一定に保たれた。
-        この溶液に対して、再度DLSで粒子の大きさの分布を測定した。
-        なお、Sample#B3についてはOutput鎖添加後の時間変化を追うため、Output鎖添加直後（0分）、10分後、および20分後の三時点でDLS測定を実施し、粒子のサイズ分布の時間変化を追跡した。
-        DLSの測定には、Malvern Panalytical社のZetasizer Ultra Red Label を使用し、測定温度は 25℃、測定時間は auto設定で行った。
+        We prepared a total of six samples in two series, as detailed in Table 7a. The first series (Sample #A) consisted of samples that were annealed on the day of the experiment, while the second series comprised samples that had been annealed two days prior. The standard annealing protocol involved heating the samples to 95°C for 5 minutes, followed by cooling to 4°C at a rate of -1°C per minute.
+        In this experiment, Dynamic Light Scattering (DLS) measurements were conducted in two stages to compare the size of the initial structures, formed by the motif sequences alone, with their size after the addition of subsequent DNA strands.
+        <br><br>
+        First, a 16 µL "base solution" was prepared, consisting of the four gel motif sequences (80 µM each) in a buffer solution containing 12.5 mM MgCl₂, 10 mM Tris, and 1.0 mM EDTA. This base solution was annealed, and its initial molecular size distribution was measured by DLS.
+        <br><br>
+        Following the initial measurement, 4 µL of a solution containing either an "output" strand or a "fuel" strand was added to the 16 µL base solution, bringing the total volume to 20 µL. This dilution resulted in final concentrations of 64 µM for each gel motif sequence and 9.2 µM for the added DNA strand. The buffer concentrations remained constant throughout the experiment. The particle size distribution of this final solution was then measured again by DLS.
+        For Sample #B3, a time-course analysis was performed to monitor changes after the addition of the output strand. DLS measurements were taken at three time points: immediately after addition (0 min), at 10 minutes, and at 20 minutes, to track the temporal evolution of the particle size distribution.
+        <br><br>
+        DLS measurements were conducted using the Malvern Panalytical Zetasizer Ultra Red Label, with a measurement temperature of 25°C and an auto setting for the measurement duration.
         </h3>
         <div class="table-block">
             <h3 class="table-title">Table 7a. Sample Recipe</h3>
@@ -421,16 +418,14 @@
         </div>
 
         <h3>
-        以上の結果のグラフを横列で比較すると、加えた溶液がOutputでもFuelでもバッファーだけでも大きな差は見られなかった。
-        また、グラフを縦列で比較すると、アニーリングの時期による変化も大きな変化は見られなかった。
-        さらに、Output鎖添加後の時間変化を追ったSample#B3においても、添加直後から20分後までの間で粒子サイズ分布に顕著な変化は観察されなかった。
-        これらの結果から、本来であればゲルモチーフ間の結合を切ると期待されるoutput鎖の添加後でも、DLSで測定される粒子サイズに有意な減少が観察されなかった。
-        原因としては、スティッキーエンド間の結合が予想以上に安定であり、output鎖による置換反応が十分に進行しなかった可能性が考えられる。
-        また、仮に部分的な解離が起きていたとしても、ゲルモチーフ全体に対してスティッキーエンド部分が占める割合は小さいため、DLS測定で検出可能なほどの粒子サイズ変化として現れなかった可能性もある。
+        A horizontal comparison of the resulting graphs revealed no significant differences among the samples to which the "Output" strand, "Fuel" strand, or buffer alone was added. 
+        Furthermore, a vertical comparison of the graphs showed no significant variations attributable to the timing of the annealing process. In the time-course analysis of Sample #B3, no remarkable changes in the particle size distribution were observed from immediately after the addition of the "Output" strand up to 20 minutes later.
+        <br><br>
+        These results indicate that no significant decrease in particle size, as measured by DLS, was observed even after the addition of the "Output" strand, which was expected to disrupt the bonds between the gel motifs. One possible explanation is that the binding between the sticky ends was more stable than anticipated, thus preventing the strand displacement reaction from proceeding sufficiently. Alternatively, even if partial dissociation did occur, the change in overall particle size may have been too small to be detected by DLS, as the sticky end portions constitute a minor fraction of the entire hydrogel motif.
         </h3>
         <h3 class="sub">Next Step</h3>
         <h3> 
-        Output鎖が実際にスティッキーエンド間の結合を切断できるかをより直接的に確認するため、4種類のモチーフのうち2種類を選び、output鎖を添加したサンプルを作製し、電気泳動により反応の進行を評価することとした。(<a href="#experiment10">実験10</a>)
+        To more directly confirm whether the "Output" strand can cleave the bonds between the sticky ends, samples will be prepared using two of the four motif types. The progress of the reaction after the addition of the "Output" strand will then be evaluated by gel electrophoresis. (<a href="#experiment10">Experiment 10</a>)
         </h3>
         </section>        
 
