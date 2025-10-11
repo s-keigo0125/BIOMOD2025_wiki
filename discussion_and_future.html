@@ -38,28 +38,46 @@
     <div class="content">
         <section>
         <h2>Discussion</h2>
+        <h3 class="sub">Evaluation of Milestones</h3>
+        <img src="image/milestone_achieve.png" alt="Milestones" style="width:80%; display: block; margin: 20px auto;">
+        <h3 class="fig-caption">Fig.1 Milestones achieved in this project</h3>
+        <br><br>
+        <h3>The achievement level of this project is shown in Fig.1</h3>
+
         <h3 class="sub">Summary of Experimental Results and Design Issues</h3>
         <h3>
-        設計したゲル用のDNA4種を混ぜても目に見える大きさのゲルはできなかった。PAGE電気泳動の結果から十字のモチーフは設計通りにできていると考えられ、DLSの実験からモチーフが数μmの構造を成していると分かった。
-        DLSとアガロース電気泳動の実験で、この数μmの構造にentropy driven circuitのoutput, fuel, バッファを加えた時の変化を調べた。全ての場合で数μmの構造は減少したが、それぞれの変化に大きな違いはなかった。これはゲルのDNAが相補性で結合しているのではなく単に凝集しており、outputがゲルの架橋構造を壊したのではなく、凝集していたDNAが溶液の希釈によって分散したためだと考えられる。
-        この原因として考えられるものが二つある。<br>
-        一つ目はモチーフ間の結合箇所に溶解のためのトーホールドを結合箇所の間に作ってしまったことである。トーホールドは、二本鎖である箇所に比べて柔軟である。柔軟であるほど強い斥力がはたらき、また、スティッキーエンド間のハイブリダイゼーション速度が遅くなるため[1]、スティッキーエンドに1本鎖の部分が残るとゲルができにくくなる。
-        <br>
-        二つ目はスティッキーエンドが自己相互配列になっておらず結合するスティッキーエンドの組み合わせが半分になっていることである。下図において、相互配列の場合1は1, 2, 3, 4全てと結合できるが、私たちの設計の場合1は2か4としか結合できなく、結合する組み合わせが半分になっている。
+        Mixing the four types of DNA designed for the gel did not result in a visible gel. From the results of PAGE electrophoresis, it is considered that the cross-shaped motifs were formed as designed, and DLS experiments showed that the motifs assemble into structures several micrometers in size.
+        <br><br>
+        Using DLS (experiment 5 ~ 6) and agarose gel electrophoresis (experiment 8 ~ 9), we investigated the changes in these micrometer-sized structures upon the addition of the entropy-driven circuit output, fuel, and buffer (experiment 7 ~ 9). In all cases, the micrometer-sized structures decreased, but there were no significant differences among the changes. This suggests that the DNA in the gel was not bound through complementarity, but was simply aggregated, and that the decrease was not due to the output breaking the gel’s crosslinking structure, but rather due to the dispersion of the aggregated DNA caused by dilution in solution.
+        Two possible causes for this are considered.<br><br>
+        The first possible cause is that single-stranded regions which act as toeholds for dissociation were introduced between the binding sites of the motifs. These regions are more flexible than double-stranded regions. Because the hybridization rate between sticky ends gets slower[1], gel formation becomes difficult.
+        <br><br>
+        The second possible cause is that the sticky ends are not self complementary, resulting in only half of the possible sticky end pairs being able to bind. In the figure below, in the case of self complementary sequences, sticky end 1 can bind to 1, 2, 3, and 4, whereas in our design, sticky end 1 can bind only to 2 or 4, reducing the number of binding combinations by half. This also makes it difficult for gels to form.
         </h3>
         <img src="image/gel_motif.png" alt="Gel Motif" style="max-width: 100%; height: auto; display: block; margin: 10px auto;">
-        <h3 class="sub">改善案</h3>
+        <h3 class="fig-caption">Fig.2: Example of a gel motif with the toehold position changed</h3>
+        <br><br>
+
+        <h3 class="sub">Improvement Plans</h3>
         <h3>
-        上記の二つの原因に対してそれぞれ改善案を示す。
-        一つ目の原因については、Fig.2のようにトーホールドの位置を変える案が考えられる。トーホールドをモチーフ間の結合箇所の間ではなく、下図のように結合箇所の外側に配置することで、ハイブリダイゼーション速度の減少を防ぐことができると考えられる。
-        二つ目の原因については、ゲルのスティッキーエンドを自己相補配列にするという案が考えられる。その場合、従来のエントロピー駆動回路のoutputがスティッキーエンドをはがすことができなくなるので、スティッキーエンドをはがす配列をもつDNAを生成する、新たなエントロピー駆動回路を設計する必要がある。
+        For the two issues mentioned above, we propose the following improvement plans.
+        For the single-stranded regions, one possible solution is to change the position of the toehold so that no single-stranded region remains. By swapping the positions of domain T’ and B’ from T’-B’ to B’-T’, as shown below, it is expected that the decrease in hybridization rate can be prevented.
         </h3>
         <div class="image-container">
             <img src="image/gel_motif_improve.png" alt="Gel Motif2" style="max-width: 80%; height: auto; display: block; margin: 10px auto;">
-            <h3 class="fig-caption">Fig.2: トーホールドの位置を変えたゲルモチーフの例</h3>
+            <h3 class="fig-caption">Fig.3: Example of a gel motif with the toehold position changed</h3>
         </div>
-        </section>
         <br>
+        <h3>
+        For the combination of sticky ends for binding, another possible approach is to use self-complementary sequences for the sticky ends of the gel. Research on DNA hydrogels involving intermolecular interactions has reported numerous examples utilizing self-complementary sequences[2][3].
+        <br><br>
+        However, in that case, the output sequence in the entropy-driven circuit will change, and the circuit must be redesigned accordingly. And carefully examining whether the circuit can still function properly even when self-complementary sequences are included, the issue of motif connection is improved.
+        <br><br>
+        Alternatively, rather than creating a gel from a DNA motif, DNA can be used as the cross-linking agent. This approach enables gelation and dissolution even with a lower DNA concentration compared to the motif used in this study. In fact, research has been published on a hydrogel in which acrylamide is cross-linked with DNA, and this gel dissolves in response to E. coli.
+        <br><br>
+        As a next step, it would be useful to perform model experiments using microbeads modified with the catalyst sequence to demonstrate uptaking target before using aptamers.
+        At the current phase, among the three main functions of macrophages, the first one—recognition—has not yet been examined. To achieve the function of recognition, the aptamer needs to be selected for target bacteria. And the catalyst sequence needs to be designed and its connection to the entropy-driven circuit needs to be experimentally verified.
+        </h3>
 
         <section>
         <h2>Future</h2>
