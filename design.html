@@ -54,9 +54,15 @@
         <h3 class="fig-caption">Fig.2 Aptamer Mechanism</h3>
         <br>
         <h3>
-        アプタマーは、特定の分子のみに強く結合する短いDNAまたはRNA配列である。さらに、アプタマーの配列を変更することで、標的となる細菌も変更できる。この実験では、アプタマーが標的細菌に反応し、新たなDNA配列を露出させるという役割を持つ。
-        具体的には、アプタマーはハイドロゲルに固定され、他の分子とは反応せず、標的の細菌が接近するのを待っています。そして、標的細菌がアプタマーに接近するとアプタマーは標的細菌にくっつき、構造が変化します。これによって、アプタマーは自身の折りたたまれた立体構造を解き、それまで内部に隠されていた新たなDNA配列が露出します。この露出した配列は、次のエントロピー駆動回路の触媒として機能します。
+        DNAアプタマーは、標的細菌の表面分子に対して特異的に認識して結合し、シグナルを発生させる役割を担っています。
+        具体的にはアプタマーはハイドロゲルに固定され、他の分子とは反応せず、標的の細菌が接近するのを待っています。そして、標的細菌がアプタマーに接近するとアプタマーは標的細菌にくっつき、構造が変化します。これによって、アプタマーは自身の折りたたまれた立体構造を解き、それまで内部に隠されていた新たなDNA配列が露出します。
+        本研究では、このようなアプタマーの機構を想定した設計概念を示しており、実際のアプタマー配列の設計や組込み実験は行っていません。
         </h3>
+        <h3>
+        DNA aptamers are short DNA or RNA sequences that bind strongly and specifically to particular molecules. By changing the sequence of the aptamer, the target bacteria can also be changed. In this experiment, the aptamer plays the role of reacting to the target bacteria and exposing a new DNA sequence.
+        In particular, the aptamer is immobilized in the hydrogel, waiting for the target bacteria to approach without reacting with other molecules. When the target bacteria approach the aptamer, the aptamer binds to the target bacteria and changes its structure. This causes the aptamer to unfold its folded three-dimensional structure, exposing a new DNA sequence that was previously hidden inside.
+        <br>
+        In this study, we propose this conceptual mechanism as a design framework; however, the actual design or incorporation of specific aptamer sequences was not performed.
         </section>
         <br>
 
@@ -162,10 +168,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Strand1</td><td>AAGTTTTGACCTTAGGGTTCCCCTTACGCATCTTCGCGGGTAGCTAAATTAAGATTGCTAGCGAGGCCGACGAAGGTGTAGG</td></tr>
-                <tr><td>Strand2</td><td>GGCCTCGCTAGCAATCTTAATTTAGCTACCCGCGACATCAAGCCACGGCGCTGAGAAAGATGGAACAACCTACACC</td></tr>
-                <tr><td>Strand3</td><td>TTGTTCCATCTTTCTCAGCGCCGTGGCTTGATGTCCTGATCTCTTTAAACGGAAGCTTTGACGAAACGGACGAAGGTGTAGG</td></tr>
-                <tr><td>Strand4</td><td>CGTTTCGTCAAAGCTTCCGTTTAAAGAGATCAGGAAGATGCGTAAGGGGAACCCTAAGGTCAAAACTTCCTACACC</td></tr>
+                <tr><td>Strand1</td><td>AAGTTTTGACCTTAGGGTTCCCCTTACGCATCTTCGCGGGTAGCTAAATTAAGATTGCTAGCGAGGCCGACGAAGGTGTAGG (82bp)</td></tr>
+                <tr><td>Strand2</td><td>GGCCTCGCTAGCAATCTTAATTTAGCTACCCGCGACATCAAGCCACGGCGCTGAGAAAGATGGAACAACCTACACC (76bp)</td></tr>
+                <tr><td>Strand3</td><td>TTGTTCCATCTTTCTCAGCGCCGTGGCTTGATGTCCTGATCTCTTTAAACGGAAGCTTTGACGAAACGGACGAAGGTGTAGG (82bp)</td></tr>
+                <tr><td>Strand4</td><td>CGTTTCGTCAAAGCTTCCGTTTAAAGAGATCAGGAAGATGCGTAAGGGGAACCCTAAGGTCAAAACTTCCTACACC (76bp)</td></tr>
             </tbody>
         </table>
         <br>
@@ -188,7 +194,7 @@
         <br>
 
         <h3 class="sub">Verification of the design using NUPACK</h3>
-        <h3>・モチーフの結合確認</h3>
+        <h3>・Motif binding verification</h3>
         <div class="image-row-center">
             <div class="image-col left">
                 <img src="image/nupack1.png" alt="NUPACK simulation result 1" style="width: 90%; height: 80%;">
@@ -203,7 +209,7 @@
         <h3>According to reference [2], a hydrogel was formed with a motif consisting of 34-base arms and 8-base sticky ends when each strand was present at 50 μM. Accordingly, in our NUPACK simulations, the concentration of each DNA strand was set to 50 μM. When the four designed strands are mixed, only the four-arm motif is formed. The design is as intended.</h3>
         <br>
 
-        <h3>・長いスティッキーエンドと短いスティッキーエンドの結合確認</h3>
+        <h3>・Long sticky end and short sticky end binding verification</h3>
         <div class="image-row-center">
             <div class="image-col left">
                 <img src="image/nupack1.png" alt="NUPACK simulation result 1" style="width: 90%; height: 80%;">
@@ -224,7 +230,7 @@
         </h3>
         <br>
 
-        <h3>・Output DNAと短いスティッキーエンドの結合確認</h3>
+        <h3>・Long sticky end and Output binding verification</h3>
         <div class="image-row-center">
             <div class="image-col left">
                 <img src="image/nupack5.png" alt="NUPACK simulation result 5" style="width: 90%; height: 80%;">
