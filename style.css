@@ -298,4 +298,39 @@ iframe {
     }
 }
 
-/*フッターここまで
+/* DNA sequence color coding - 色弱対応 */
+span.arm-1-4 {
+  background-color: #FEF3C7; /* 黄色系 */
+  padding: 2px 0;
+}
+
+span.arm-1-2 {
+  background-color: #BFDBFE; /* より濃い青色系 */
+  padding: 2px 0;
+}
+
+span.arm-2-3 {
+  background-color: #FCE7F3; /* ピンク系 */
+  padding: 2px 0;
+}
+
+span.arm-3-4 {
+  background-color: #DDD6FE; /* より濃い紫系 */
+  padding: 2px 0;
+}
+
+span.T {
+  background-color: #FED7AA; /* オレンジ系 */
+  padding: 2px 0;
+}
+
+span.B {
+  background-color: #D1FAE5; /* 緑系 */
+  padding: 2px 0;
+}
+
+/* Ensure no spacing between spans */
+.sequence-table span {
+  display: inline;
+  white-space: nowrap;
+}
