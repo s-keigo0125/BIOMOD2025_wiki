@@ -39,9 +39,6 @@
         <h3 class="fig-caption">Fig.1 もう少し簡潔に全体の流れが分かる図にしたい</h3>
         <br>
         <h3>
-        私たちが考案したHungry Gelは、DNAアプタマー、エントロピー駆動回路、DNAハイドロゲルという3種類のDNAモジュールの組み合わせによって構成される。これ以降では、それぞれの役割と機能、およびそれらがどのように一連の応答を実現するかを詳述する。
-        </h3>
-        <h3>
         Hungry Gel is composed of three types of DNA modules: DNA aptamers, entropy-driven circuits, and DNA hydrogels. In this paper, we describe in detail the roles and functions of each module, as well as how they cooperate to produce a series of responses.
         </h3>
         </section>
@@ -49,7 +46,6 @@
 
         <section>
         <h2>DNA Aptamer</h2>
-        <h2>いったんめんどいから修正後回しにしてます</h2>
         <img src="image/Aptamer.gif" alt="Aptamer mechanism diagram" style="max-width:65%; height: auto; display: block; margin: 16px auto;">
         <h3 class="fig-caption">Fig.2 Aptamer Mechanism</h3>
         <br>
@@ -57,12 +53,14 @@
         DNAアプタマーは、標的細菌の表面分子に対して特異的に認識して結合し、シグナルを発生させる役割を担っています。
         具体的にはアプタマーはハイドロゲルに固定され、他の分子とは反応せず、標的の細菌が接近するのを待っています。そして、標的細菌がアプタマーに接近するとアプタマーは標的細菌にくっつき、構造が変化します。これによって、アプタマーは自身の折りたたまれた立体構造を解き、それまで内部に隠されていた新たなDNA配列が露出します。
         本研究では、このようなアプタマーの機構を想定した設計概念を示しており、実際のアプタマー配列の設計や組込み実験は行っていません。
+        今後、特定の標的に対応したシステムを構築する際には、選定したアプタマー配列に応じてEntropy Driven Circuitの塩基配列とそれに対応するDNAハイドロゲルモチーフの塩基配列を設計する必要があります。
         </h3>
         <h3>
         DNA aptamers are short DNA or RNA sequences that bind strongly and specifically to particular molecules. By changing the sequence of the aptamer, the target bacteria can also be changed. In this experiment, the aptamer plays the role of reacting to the target bacteria and exposing a new DNA sequence.
         In particular, the aptamer is immobilized in the hydrogel, waiting for the target bacteria to approach without reacting with other molecules. When the target bacteria approach the aptamer, the aptamer binds to the target bacteria and changes its structure. This causes the aptamer to unfold its folded three-dimensional structure, exposing a new DNA sequence that was previously hidden inside.
         <br>
-        In this study, we propose this conceptual mechanism as a design framework; however, the actual design or incorporation of specific aptamer sequences was not performed.
+        In this study, we propose this conceptual mechanism as a design framework; however, the actual design or incorporation of specific aptamer sequences was not conducted.
+        When constructing systems tailored to specific targets in the future, the aptamer sequence must first be selected based on the target. Subsequently, the DNA sequence of the Entropy Driven Circuit and the corresponding DNA hydrogel motif sequence need to be designed according to the selected aptamer sequence.
         </section>
         <br>
 
@@ -73,6 +71,9 @@
         <br>
         <h3>
         エントロピー駆動回路の役割は、アプタマーが生成する微弱な出力信号の濃度を、ハイドロゲル溶解に必要なレベルまで増幅することです。私たちは、Zhangらが提案した酵素を用いない増幅回路[1]をそのまま配列を変えずに利用し、後述するDNAハイドロゲルの配列をこの回路のOutput配列に合わせて設計した。
+        このエントロピー駆動回路は、Fig.3に示すように、CatalystとSubstrateがドメイン5を介して結合し(Intermediate1)、ドメイン4の可逆的なブランチマイグレーションで構造が変化したのち(Intermediate2)、ドメイン3だけでは結合が不安定になった結果SBが放出される(Intermediate3)。そして、FuelとIntermediate3がドメイン3を介して結合し(Intermediate4)、ドメイン2の可逆的なブランチマイグレーションで構造が変化し(Intermediate5)、Outputが放出される。ドメイン4で鎖置換反応が進行することで、catalystが放出される(Reaction Complete)。
+        この反応では、Catalystは消費されずに繰り返し利用されるため、少量のCatalystから多数のOutputが生成されます。
+        <br><br>
         回路に用いられている配列は<a href="#appendix">Appendix</a>に記載しています。
         </h3>
         <h3>
