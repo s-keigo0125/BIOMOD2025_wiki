@@ -37,19 +37,28 @@
         <h2>Overview</h2>
         <h3 class="sub">・Background</h3>
         <h3>
-        One of the immune cells that exhibits highly autonomous functions within the body is the macrophage. Macrophages are responsible for the “phagocytic process,” in which they autonomously recognize and engulf pathogens or foreign substances. When detecting target bacteria or foreign materials, macrophages enclose them with their cell membrane, internalize them, and subsequently degrade and neutralize them inside the cell.
-        This sequence of processes constitutes a highly sophisticated biological system composed of multiple steps: (1) specific recognition, (2) signal transduction, and (3) active uptake.<br>
-        <br>
-        To artificially reproduce such advanced autonomous functions, DNA has attracted attention as an useful material. DNA,  a molecule that is used for encoding genetic information in cells, can be utilized beyond information storage by leveraging its specific base-pairing and self-assembly properties. These characteristics enable the artificial construction of diverse nanostructures and functional materials.
-        One example of this is the DNA hydrogel. DNA hydrogels have promising applications in fields such as sensing and drug delivery. By integrating the diverse functions realized through DNA sequence design technologies, it may be possible to construct highly autonomous systems analogous to macrophages.
+        Macrophages are responsible for the “phagocytic process,” in which they autonomously
+        recognize and engulf pathogens or foreign substances. When they detect target bacteria or
+        foreign materials, macrophages enclose them in their cell membrane, internalize them, and
+        subsequently degrade and neutralize them inside the cell. This sequence of processes
+        constitutes a highly sophisticated biological system composing three steps: (1) specific
+        recognition, (2) signal transduction, and (3) active uptake.
+        <br><br>
+        DNA has attracted attention as a useful material for artificially reproducing such advanced autonomous functions.
+        DNA, a molecule used for encoding genetic information in cells, can be utilized
+        beyond information storage by leveraging its specific base-pairing and self-assembly
+        properties. These properties enable the construction of diverse nanostructures and
+        functional materials. One example of this is the DNA hydrogels. DNA hydrogels have
+        promising applications in fields such as sensing and drug delivery. By integrating the
+        diverse functions realized through DNA sequence design technologies could enable the
+        construction of highly autonomous systems analogous to macrophages.
         </h3>
         <br>
         <h3 class="sub">・Problem</h3>
         <h3>
-        While DNA hydrogels offer excellent biocompatibility and programmability, 
-        their integration with advanced technologies such as DNA computing has 
-        been challenging due to the significant gap in operating concentrations 
-        between these systems.
+        While DNA hydrogels offer excellent biocompatibility and programmability, their integration
+        with advanced technologies such as DNA computing has been challenging due to the
+        significant gap in operating concentrations between the hydrogel and the DNA computing.
         </h3>
         <br>
         <h3 class="sub">・Goal</h3>
@@ -62,10 +71,10 @@
         <section>
         <h2>Idea</h2>
         <h3>
-        To reconstruct the phagocytic process of macrophages as a DNA molecular system, we first reconsidered the macrophage mechanism into three abstract functional modules and reinterpreted each in a form that could be implemented using DNA molecules.
+        In order to reconstruct the phagocytic process of macrophages as a DNA-based system, we first broke down the macrophage mechanism into three abstract functional modules and reinterpreted each in a way that could be implemented using DNA molecules.
         First, we achieved <strong>recognition</strong> by exposing specific sequences as a result of reaction with the target.
-        Second, we achieved <strong>signal transduction</strong> by converting recognized signals through chemical amplification that produces many product molecules from trigger molecules.
-        Third, we achieved <strong>uptake</strong> by locally degrading the material structure in response to the amplified signal, thereby recreating the engulfing behavior through structural dissolution.
+        Second, we achieved <strong>signal transduction</strong> by converting the exposed signals through chemical amplification that produces many product molecules from trigger molecules.
+        Third, we achieved <strong>uptake</strong> of the target by locally degrading the material structure in response to the amplified signal, thereby recreating the engulfing behavior of macrophages through structural dissolution of the DNA hydrogel.
         <br><br>
         Through this functional decomposition, we defined the phagocytic process as a sequence of three independent modules: “recognition → signal transduction → uptake,” each implemented as interactions between DNA molecules.
         </h3>
@@ -74,21 +83,33 @@
         <section>
         <h2>Solution</h2>
         <h3>
-        We implement the three functional modules, which we abstracted in the Ideas section, as concrete DNA systems: DNA aptamers, entropy-driven circuits, and DNA hydrogels.
+        We implement the three functional modules, which we abstracted above, as a concrete DNA-based system: DNA aptamers, entropy-driven circuits, and DNA hydrogels.
         </h3>
         <br>
         <h3>1. Module for recognizing targets and converting information<br>
-        This module employs DNA aptamers that specifically bind to molecules on the surface of target bacteria. Upon binding to the target, the aptamer undergoes a conformational change, exposing a single-stranded DNA. 
+        This module employs DNA aptamers that specifically bind to molecules on the surface of
+        target bacteria. Upon binding to the target, the aptamer undergoes a conformational
+        change, exposing a single-stranded DNA which triggers the amplifier.
         </h3>
         <br>
         <h3>2. Module for amplifying and converting signals<br>
-        This module utilizes an entropy-driven circuit, which is driven by the catalyst sequences exposed through target recognition in Module 1. The circuit consists of a solution containing three DNA components, substrate, fuel, and catalyst.
-        The substrate reacts with the catalyst to release output DNA while consuming the fuel but leaving the catalyst. When the catalyst DNA released from the aptamer is added, the reaction cycle initiates, producing a large amount of single-stranded DNA called output.
+        This module utilizes an entropy-driven circuit, which is driven by the trigger sequence
+        exposed through target recognition in the previous module, which act as the catalyst
+        sequence. The circuit consists of a solution containing three DNA components; substrate,
+        fuel, and catalyst. The substrate reacts with the catalyst to release output DNA while
+        consuming the fuel but leaving the catalyst. When the catalyst DNA exposed by the
+        aptamer is appeared, the reaction cycle initiates, producing a large amount of single-
+        stranded DNA called “output”.
         </h3>
         <br>
-        <h3>3. Module for self-dissolution to create space and engulf targets<br>
-        The uptake module employs a DNA hydrogel composed of four-branched DNA motifs as its network components. This hydrogel binds adjacent motifs through two types of sticky ends of different lengths. The sticky end sequences are designed to specifically bind to the output DNA released from the entropy-driven circuit.
-        Specifically, the short sticky ends are used for binding between motifs, while the long sticky ends are designed to have sequences complementary to the output DNA. This design allows the output DNA to preferentially bind to the long sticky ends, thereby dissolving the hydrogel's network structure.
+        <h3>3. Module for uptaking targets by self-dissolution of DNA hydrogel<br>
+        This module employs a DNA hydrogel composed of four-branched DNA motifs as its
+        network components. This hydrogel binds adjacent motifs through two types of sticky ends
+        of different lengths.The short sticky ends are used for binding between motifs, while the long sticky ends are designed to have
+        sequences complementary to the output DNA. This design allows the output DNA to
+        preferentially bind to the long sticky ends, results in releasing the bond between the motifs
+        via toe-hold mediated strand displacement (TMSD), thereby dissolving the hydrogel's
+        network structure.
         </h3>
         <br>
         </section>
