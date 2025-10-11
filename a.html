@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Gel Milestones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #333;
+        }
+        .header-row {
+            display: grid;
+            grid-template-columns: 350px repeat(4, 1fr);
+            gap: 0;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        .header-spacer {
+            /* Empty space for alignment */
+        }
+        .header-item {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333;
+            padding: 10px;
+        }
+        .milestone-row {
+            display: grid;
+            grid-template-columns: 350px repeat(4, 1fr);
+            gap: 0;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .milestone-label {
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: right;
+            padding-right: 30px;
+            color: #333;
+        }
+        .arrow {
+            height: 70px;
+            background-color: #E8F4F8;
+            border: 2px solid #4A9EBD;
+            position: relative;
+            margin-left: -2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            clip-path: polygon(0 0, calc(100% - 25px) 0, 100% 50%, calc(100% - 25px) 100%, 0 100%, 25px 50%);
+        }
+        .arrow:first-of-type {
+            margin-left: 0;
+            clip-path: polygon(0 0, calc(100% - 25px) 0, 100% 50%, calc(100% - 25px) 100%, 0 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Milestones of Hungry Gel Project</h1>
+        
+        <div class="header-row">
+            <div class="header-spacer"></div>
+            <div class="header-item">Principle</div>
+            <div class="header-item">Design</div>
+            <div class="header-item">Construction</div>
+            <div class="header-item">Validation</div>
+            <div class="header-item">Integration</div>
+        </div>
+
+        <div class="milestone-row">
+            <div class="milestone-label">Fabrication of DNA hydrogels</div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="milestone-row">
+            <div class="milestone-label">Construction of entropy-driven circuit</div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="milestone-row">
+            <div class="milestone-label">Verification of gel degradation by output DNA</div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="milestone-row">
+            <div class="milestone-label">Analysis of catalyst concentration vs degradation kinetics</div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="milestone-row">
+            <div class="milestone-label">Demonstration of complete cascade</div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+</body>
+</html>
